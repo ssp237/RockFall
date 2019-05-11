@@ -383,9 +383,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>test.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\test.c</FilePath>
+              <FileName>test.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\test.cpp</FilePath>
             </File>
           </Files>
         </Group>

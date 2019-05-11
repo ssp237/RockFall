@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\RockFall.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\RockFall.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri May 10 17:08:02 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri May 10 21:21:36 2019
 <BR><P>
 <H3>Maximum Stack Usage =        248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -579,8 +579,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__assert_puts
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 </UL>
-<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetMuxMode
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetConfiguration
+<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetConfiguration
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_RtcOscInit
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_OscInit
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_ClockInit
@@ -602,6 +601,7 @@ Global Symbols
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_PushSTCDToHTCD
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_ClaimChannel
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMAMUX_HAL_SetChannelCmd
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetMuxMode
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetNbytes
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetMajorCount
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetAttribute
@@ -992,11 +992,11 @@ Global Symbols
 <LI>Call Chain = CLOCK_SYS_SetConfiguration &rArr; CLOCK_SYS_SetMcgMode &rArr; CLOCK_HAL_SetPbeMode &rArr; CLOCK_HAL_GetMcgMode
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetSimConfigration
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOutDiv
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetOscerConfigration
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetCoreClockFreq
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetSimConfigration
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_ClockInit
 </UL>

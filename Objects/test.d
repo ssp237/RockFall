@@ -1,4 +1,4 @@
-.\objects\test.o: test.c
+.\objects\test.o: test.cpp
 .\objects\test.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.8.0\Board\board_accelerometer.h
 .\objects\test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\test.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.3.0\platform\utilities\inc\fsl_debug_console.h

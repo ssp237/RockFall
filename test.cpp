@@ -1,6 +1,11 @@
-#include "board_accelerometer.h"
-#include "fsl_debug_console.h"
-#include "board.h"
+
+extern "C" {
+	#include "board_accelerometer.h"
+	#include "fsl_debug_console.h"
+	#include "board.h"
+	int32_t Accelerometer_Initialize();
+	int32_t Accelerometer_GetState(ACCELEROMETER_STATE*);
+}
 
 ACCELEROMETER_STATE state;
 int main(){
