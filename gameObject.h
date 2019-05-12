@@ -1,3 +1,5 @@
+#include "board.h"
+
 #pragma once
 
 /*
@@ -25,7 +27,7 @@ public:
   float y;
 
   virtual ObstacleType getType();
-  virtual void draw();
+  virtual void draw(Board b);
   virtual void update();
 
 private:
@@ -37,8 +39,9 @@ private:
 class Player : public Obstacle
 {
 public:
+  Player(int init_x, int init_y);
   ObstacleType getType();
-  void draw();
+  void draw(Board b);
   void update();
 
 private:
