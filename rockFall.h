@@ -1,3 +1,5 @@
+#ifndef rockFall_h
+#define rockFall_h
 #include "gameObject.h"
 /* 
 *   Implementation of an abstract class to control different game modes. 
@@ -32,7 +34,7 @@ public:
 
 private:
   GameBoard board;
-	int objectSize; 
+  int objectSize;
 };
 
 /* 
@@ -47,6 +49,7 @@ public:
   RockFall();
 
 private:
-  GameController *game; 
+  GameController *game;
   GameBoard *board;
 };
+#endif

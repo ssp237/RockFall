@@ -1,3 +1,6 @@
+#ifndef gameObject_h
+#define gameObject_h
+
 #include "gameboard.h"
 
 const float g = 5;
@@ -58,3 +61,4 @@ public:
 
 private:
 };
+#endif
