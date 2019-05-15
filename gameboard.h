@@ -1,3 +1,6 @@
+#ifndef gameboard_h
+#define gameboard_h
+
 #include "stdint.h"
 /*
 *   Enumeration of possible colors
@@ -30,3 +33,4 @@ private:
   void drawOrange(int x, int y);
   void drawRed(int x, int y);
 };
+#endif

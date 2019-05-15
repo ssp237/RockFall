@@ -6,6 +6,7 @@ extern "C" {
 	#include <stdio.h>
 	#include "stdlib.h"
 	#include "gameboard.h"
+	#include "rockFall.h"
 	int32_t Accelerometer_Initialize();
 	int32_t Accelerometer_GetState(ACCELEROMETER_STATE*);
 	extern ARM_DRIVER_I2C Driver_I2C0;
@@ -29,6 +30,7 @@ extern "C" {
 
 uint32_t adr = 0x70;
 int delayTime = 1000;
+ACCELEROMETER_STATE astate;
 
 void i2c_init (void) {
   topDriver->Initialize   (NULL);
@@ -79,14 +81,16 @@ void delay(void){
 }
 
 int main(){
-	hardware_init();	
+	hardware_init();
+	Accelerometer_Initialize();
 	i2c_init();
 	board_init();
 	GameBoard * gb = new GameBoard();
+	RockFall * rf = new RockFall();
 	board_display(gb);
 	while(1){
 		delay();
-		gb->draw(5,10,RED);
+		
 		board_display(gb);
 	}
 	return 0;
