@@ -47,7 +47,7 @@ public:
   void update(float dt);
 
 private:
-}
+};
 
 /**Implementation of Obstacle : rock */
 class Rock : public Obstacle
@@ -59,4 +59,4 @@ public:
   void update(float dt);
 
 private:
-}
+};

@@ -14,7 +14,7 @@ public:
   virtual void draw();
 
 private:
-}
+};
 
 /* 
 *   Implementation of a class (rockFall) to run the main game. This class
@@ -30,4 +30,4 @@ public:
 
 private:
   Controller[] controllers;
-}
+};

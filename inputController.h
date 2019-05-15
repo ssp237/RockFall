@@ -36,4 +36,4 @@ private:
   int h_tilt;
   int v_tilt;
   static InputController theController;
-}
+};
