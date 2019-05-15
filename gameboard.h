@@ -16,10 +16,15 @@ enum Color
 *   board. 
 *   Provides drawing methods to abstract out drawing. 
 */
-class Board
+class GameBoard
 {
 public:
   void draw(int x, int y, Color c);
+  void pushToBoard();
+  void resetBoard();
 
 private:
+  void drawGreen(int x, int y);
+  void drawYellow(int x, int y);
+  void drawRed(int x, int y);
 };

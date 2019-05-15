@@ -1,3 +1,5 @@
+#include "gameObject.h"
+
 #pragma once
 
 /* 
