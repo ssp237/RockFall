@@ -22,4 +22,4 @@ public:
   void draw(int x, int y, Color c);
 
 private:
-}
+};
