@@ -3,6 +3,7 @@
 //Constructor
 GameBoard::GameBoard()
 {
+  int[] board = new int[17];
 }
 
 GameBoard::draw(int x, int y, Color c)

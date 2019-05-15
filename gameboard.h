@@ -19,6 +19,7 @@ enum Color
 class GameBoard
 {
 public:
+  int[] board;
   void draw(int x, int y, Color c);
   void pushToBoard();
   void resetBoard();
