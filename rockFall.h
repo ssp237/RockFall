@@ -47,9 +47,10 @@ class RockFall
 public:
   void run();
   RockFall();
+  GameBoard *board;
 
 private:
   GameController *game;
-  GameBoard *board;
 };
+
 #endif

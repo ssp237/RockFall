@@ -52,16 +52,40 @@ rockFall.h(30): warning:  #1300-D: draw inherits implicit virtual
     void draw(GameBoard &board);
 rockFall.h(52): warning:  #1-D: last line of file ends without a newline
   };
-rockFall.cpp(53): warning:  #1-D: last line of file ends without a newline
+rockFall.cpp(54): warning:  #1-D: last line of file ends without a newline
   }
 rockFall.cpp: 13 warnings, 0 errors
 compiling main.cpp...
+gameObject.h(43): warning:  #1300-D: getType inherits implicit virtual
+    ObstacleType getType();
+gameObject.h(44): warning:  #1300-D: draw inherits implicit virtual
+    void draw(GameBoard &b);
+gameObject.h(45): warning:  #1300-D: update inherits implicit virtual
+    void update(float dt);
+gameObject.h(55): warning:  #1300-D: getType inherits implicit virtual
+    ObstacleType getType();
+gameObject.h(56): warning:  #1300-D: draw inherits implicit virtual
+    void draw(GameBoard &b);
+gameObject.h(57): warning:  #1300-D: update inherits implicit virtual
+    void update(float dt);
+gameObject.h(60): warning:  #1-D: last line of file ends without a newline
+  };
+rockFall.h(27): warning:  #1300-D: render inherits implicit virtual
+    void render();
+rockFall.h(28): warning:  #1300-D: update inherits implicit virtual
+    void update(float dt);
+rockFall.h(29): warning:  #1300-D: preUpdate inherits implicit virtual
+    void preUpdate();
+rockFall.h(30): warning:  #1300-D: draw inherits implicit virtual
+    void draw(GameBoard &board);
+rockFall.h(52): warning:  #1-D: last line of file ends without a newline
+  };
 main.cpp(94): warning:  #111-D: statement is unreachable
   	return 0;
-main.cpp: 1 warning, 0 errors
+main.cpp: 13 warnings, 0 errors
 linking...
-Program Size: Code=14556 RO-data=2536 RW-data=44 ZI-data=2256  
-".\Objects\RockFall2.axf" - 0 Error(s), 14 Warning(s).
+Program Size: Code=15060 RO-data=2624 RW-data=44 ZI-data=2256  
+".\Objects\RockFall2.axf" - 0 Error(s), 26 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -145,25 +169,25 @@ Package Vendor: Keil
       Source file:   addon_cmsis\Driver\MK64F\I2C_MK64F.c
 
    * Component: Keil::Device:KSDK Configuration:FRDM-K64F:1.2.0
-      Source file:   examples\frdmk64f\hardware_init.c
       Source file:   examples\frdmk64f\board.c
+      Source file:   examples\frdmk64f\hardware_init.c
+      Include file:  examples\frdmk64f\board.h
       Source file:   examples\frdmk64f\gpio_pins.c
       Source file:   examples\frdmk64f\pin_mux.c
-      Include file:  examples\frdmk64f\board.h
 
    * Component: Keil::Device:KSDK Driver:GPIO:1.2.0
       Include file:  platform\drivers\inc\fsl_gpio_driver.h
-      Source file:   platform\drivers\src\gpio\fsl_gpio_driver.c
       Source file:   platform\drivers\src\gpio\fsl_gpio_irq.c
       Source file:   platform\drivers\src\gpio\fsl_gpio_lpm_callback.c
+      Source file:   platform\drivers\src\gpio\fsl_gpio_driver.c
       Source file:   platform\drivers\src\gpio\fsl_gpio_common.c
 
    * Component: Keil::Device:KSDK Driver:RTC:1.2.0
+      Source file:   platform\drivers\src\rtc\fsl_rtc_driver.c
       Include file:  platform\drivers\inc\fsl_rtc_driver.h
       Source file:   platform\drivers\src\rtc\fsl_rtc_irq.c
-      Source file:   platform\drivers\src\rtc\fsl_rtc_common.c
       Source file:   platform\drivers\src\rtc\fsl_rtc_lpm_callback.c
-      Source file:   platform\drivers\src\rtc\fsl_rtc_driver.c
+      Source file:   platform\drivers\src\rtc\fsl_rtc_common.c
 
    * Component: Keil::Device:KSDK Driver:eDMA:1.2.0
       Include file:  platform\drivers\inc\fsl_edma_driver.h
@@ -177,42 +201,42 @@ Package Vendor: Keil
       Source file:   platform\hal\src\dmamux\fsl_dmamux_hal.c
 
    * Component: Keil::Device:KSDK HAL:GPIO:1.2.0
-      Source file:   platform\hal\src\gpio\fsl_gpio_hal.c
       Include file:  platform\hal\inc\fsl_gpio_hal.h
+      Source file:   platform\hal\src\gpio\fsl_gpio_hal.c
 
    * Component: Keil::Device:KSDK HAL:I2C:1.2.0
-      Source file:   platform\hal\src\i2c\fsl_i2c_hal.c
       Include file:  platform\hal\inc\fsl_i2c_hal.h
+      Source file:   platform\hal\src\i2c\fsl_i2c_hal.c
 
    * Component: Keil::Device:KSDK HAL:LPTMR:1.2.0
       Include file:  platform\hal\inc\fsl_lptmr_hal.h
       Source file:   platform\hal\src\lptmr\fsl_lptmr_hal.c
 
    * Component: Keil::Device:KSDK HAL:MCG:1.2.0
+      Include file:  platform\hal\inc\fsl_mcg_hal_modes.h
+      Include file:  platform\hal\inc\fsl_mcg_hal.h
       Source file:   platform\hal\src\mcg\fsl_mcg_hal_modes.c
       Source file:   platform\hal\src\mcg\fsl_mcg_hal.c
-      Include file:  platform\hal\inc\fsl_mcg_hal.h
-      Include file:  platform\hal\inc\fsl_mcg_hal_modes.h
 
    * Component: Keil::Device:KSDK HAL:OSC:1.2.0
-      Source file:   platform\hal\src\osc\fsl_osc_hal.c
       Include file:  platform\hal\inc\fsl_osc_hal.h
+      Source file:   platform\hal\src\osc\fsl_osc_hal.c
 
    * Component: Keil::Device:KSDK HAL:PORT:1.2.0
       Include file:  platform\hal\inc\fsl_port_hal.h
       Source file:   platform\hal\src\port\fsl_port_hal.c
 
    * Component: Keil::Device:KSDK HAL:RTC:1.2.0
-      Source file:   platform\hal\src\rtc\fsl_rtc_hal.c
       Include file:  platform\hal\inc\fsl_rtc_hal.h
+      Source file:   platform\hal\src\rtc\fsl_rtc_hal.c
 
    * Component: Keil::Device:KSDK HAL:SIM:1.2.0
       Include file:  platform\hal\inc\fsl_sim_hal.h
       Source file:   platform\hal\src\sim\MK64F12\fsl_sim_hal_MK64F12.c
 
    * Component: Keil::Device:KSDK HAL:UART:1.2.0
-      Include file:  platform\hal\inc\fsl_uart_hal.h
       Source file:   platform\hal\src\uart\fsl_uart_hal.c
+      Include file:  platform\hal\inc\fsl_uart_hal.h
 
    * Component: Keil::Device:KSDK HAL:eDMA:1.2.0
       Source file:   platform\hal\src\edma\fsl_edma_hal.c
@@ -223,27 +247,27 @@ Package Vendor: Keil
       Source file:   platform\osa\src\fsl_os_abstraction_bm.c
 
    * Component: Keil::Device:KSDK System:Clock:1.2.0
+      Source file:   platform\system\src\clock\fsl_clock_manager.c
       Include file:  platform\system\inc\fsl_clock_manager.h
       Source file:   platform\system\src\clock\fsl_clock_manager_common.c
-      Source file:   platform\system\src\clock\fsl_clock_manager.c
       Source file:   platform\system\src\clock\MK64F12\fsl_clock_MK64F12.c
 
    * Component: Keil::Device:KSDK System:Interrupt:1.2.0
-      Source file:   platform\system\src\interrupt\fsl_interrupt_manager.c
       Include file:  platform\system\inc\fsl_interrupt_manager.h
+      Source file:   platform\system\src\interrupt\fsl_interrupt_manager.c
 
    * Component: Keil::Device:KSDK Utility:Debug Console:1.2.0
-      Source file:   platform\utilities\src\print_scan.c
-      Source file:   platform\utilities\src\fsl_debug_console.c
       Include file:  platform\utilities\inc\fsl_debug_console.h
+      Source file:   platform\utilities\src\fsl_debug_console.c
+      Source file:   platform\utilities\src\print_scan.c
 
    * Component: Keil::Device:Startup:2.8
-      Source file:   platform\devices\MK64F12\startup\arm\startup_MK64F12.s
-      Include file:  platform\devices\MK64F12\startup\system_MK64F12.h
-      Source file:   platform\devices\startup.c
-      Source file:   platform\devices\MK64F12\startup\system_MK64F12.c
       Include file:  addon_cmsis\Driver\MK64F\Config\RTE_Device.h
-Build Time Elapsed:  00:00:14
+      Source file:   platform\devices\MK64F12\startup\system_MK64F12.c
+      Source file:   platform\devices\startup.c
+      Include file:  platform\devices\MK64F12\startup\system_MK64F12.h
+      Source file:   platform\devices\MK64F12\startup\arm\startup_MK64F12.s
+Build Time Elapsed:  00:00:17
 </pre>
 </body>
 </html>
