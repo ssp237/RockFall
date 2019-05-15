@@ -27,8 +27,6 @@ extern "C" {
 #define HT16K33_CMD_BRIGHTNESS 0xE0
 
 uint32_t adr = 0x70;
-uint8_t topBuff[17];
-uint8_t botBuff[17];
 int delayTime = 1000;
 
 void i2c_init (void) {
@@ -66,11 +64,11 @@ void board_init (void) {
 	while (botDriver->GetStatus().busy);
 }
 
-void board_display() {
-	topDriver->MasterTransmit(adr, topBuff, 17, false);		
+void board_display(GameBoard * gb) {
+	topDriver->MasterTransmit(adr, gb->topBuff, 17, false);		
 	while (topDriver->GetStatus().busy);
 	
-	botDriver->MasterTransmit(adr, botBuff, 17, false);		
+	botDriver->MasterTransmit(adr, gb->botBuff, 17, false);		
 	while (botDriver->GetStatus().busy);
 }
 
@@ -83,9 +81,11 @@ int main(){
 	hardware_init();	
 	i2c_init();
 	board_init();
+	GameBoard * gb = new GameBoard();
+	board_display(gb);
 	while(1){
 		delay();
-		//tbd
+		
 	}
 	return 0;
 }

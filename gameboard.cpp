@@ -6,6 +6,7 @@ GameBoard::GameBoard()
 {
   topBuff = new uint8_t[17];
   botBuff = new uint8_t[17];
+	resetBoard();
 }
 
 void GameBoard::draw(int x, int y, Color c)
@@ -22,10 +23,6 @@ void GameBoard::draw(int x, int y, Color c)
     drawGreen(x, y);
     break;
   }
-}
-
-void GameBoard::pushToBoard()
-{
 }
 
 void GameBoard::resetBoard()
