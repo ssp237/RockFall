@@ -20,6 +20,7 @@ RockFall::RockFall()
 
 void RockFall::run()
 {
+	game->render();
 }
 
 void GameController::draw(GameBoard &board)

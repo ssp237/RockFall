@@ -30,3 +30,5 @@
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: gameboard.h
+.\objects\main.o: rockFall.h
+.\objects\main.o: gameObject.h

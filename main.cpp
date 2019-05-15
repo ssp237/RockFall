@@ -85,13 +85,11 @@ int main(){
 	Accelerometer_Initialize();
 	i2c_init();
 	board_init();
-	GameBoard * gb = new GameBoard();
 	RockFall * rf = new RockFall();
-	board_display(gb);
 	while(1){
 		delay();
-		
-		board_display(gb);
+		rf->run();
+		board_display(rf->board);
 	}
 	return 0;
 }
