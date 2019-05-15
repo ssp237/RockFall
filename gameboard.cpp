@@ -18,7 +18,8 @@ void GameBoard::draw(int x, int y, Color c)
   case YELLOW:
     drawYellow(x, y);
     break;
-  case GREEN: drawGreen(x, y);
+  case GREEN:
+    drawGreen(x, y);
     break;
   }
 }
