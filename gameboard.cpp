@@ -16,8 +16,8 @@ void GameBoard::draw(int x, int y, Color c)
   case RED:
     drawRed(x, y);
     break;
-  case YELLOW:
-    drawYellow(x, y);
+  case ORANGE:
+    drawOrange(x, y);
     break;
   case GREEN:
     drawGreen(x, y);
@@ -36,12 +36,28 @@ void GameBoard::resetBoard()
 
 void GameBoard::drawGreen(int x, int y)
 {
-}
-
-void GameBoard::drawYellow(int x, int y)
-{
+	if(y>8){
+		topBuff[(2*(y-8))-1] |= (128 >> (x-1));
+	}
+	else{
+		botBuff[(2*y)-1] |= (128 >> (x-1));
+	}
 }
 
 void GameBoard::drawRed(int x, int y)
 {
+	{
+	if(y>8){
+		topBuff[(2*(y-8))] |= (128 >> (x-1));
+	}
+	else{
+		botBuff[(2*y)] |= (128 >> (x-1));
+	}
+}
+}
+
+void GameBoard::drawOrange(int x, int y)
+{
+	drawRed(x, y);
+	drawGreen(x, y);
 }

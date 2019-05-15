@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'RockFall' 
+ * Project: 'RockFall2' 
  * Target:  'Target 1' 
  */
 

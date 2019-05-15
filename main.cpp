@@ -85,7 +85,11 @@ int main(){
 	board_display(gb);
 	while(1){
 		delay();
-		
+		gb->draw(4,10,ORANGE);
+		gb->draw(4, 12, GREEN);
+		gb->draw(7, 12, RED);
+		gb->draw(3, 4, RED);
+		board_display(gb);
 	}
 	return 0;
 }

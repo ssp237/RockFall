@@ -6,7 +6,7 @@ enum Color
 {
   RED,
   GREEN,
-  YELLOW
+  ORANGE
 };
 
 /*
@@ -27,6 +27,6 @@ public:
 
 private:
   void drawGreen(int x, int y);
-  void drawYellow(int x, int y);
+  void drawOrange(int x, int y);
   void drawRed(int x, int y);
 };
