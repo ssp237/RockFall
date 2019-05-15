@@ -18,7 +18,8 @@ enum Color
 class GameBoard
 {
 public:
-  uint8_t * board;
+  uint8_t * topBuff;
+  uint8_t * botBuff;
   void draw(int x, int y, Color c);
   void pushToBoard();
   void resetBoard();

@@ -74,14 +74,6 @@ void board_display() {
 	while (botDriver->GetStatus().busy);
 }
 
-
-void clearBuffer() {
-  for (uint8_t i=0; i<=16; i++) {
-		topBuff[i] = 0;
-		botBuff[i] = 0;
-  }
-}
-
 void delay(void){
 	int j;
 	for(j=0; j<delayTime; j++);
@@ -91,8 +83,6 @@ int main(){
 	hardware_init();	
 	i2c_init();
 	board_init();
-	clearBuffer();
-	board_display();
 	while(1){
 		delay();
 		//tbd
