@@ -4,16 +4,22 @@
 //Constructor
 GameBoard::GameBoard()
 {
-  board = new uint8_t[17];
+  topBuff = new uint8_t[17];
+	botBuff = new uint8_t[17];
 }
 
 void GameBoard::draw(int x, int y, Color c) {
 }
 
 void GameBoard::pushToBoard() {
+	
 }
 
 void GameBoard::resetBoard() {
+  for (uint8_t i=0; i<=16; i++) {
+		topBuff[i] = 0;
+		botBuff[i] = 0;
+  }
 }
 
 void GameBoard::drawGreen(int x, int y) {
