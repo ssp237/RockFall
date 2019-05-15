@@ -14,5 +14,9 @@ Player::Player(float init_x, float init_y)
 
 void Player::draw(Board b)
 {
-  b.draw(floor(x), floor(y), YELLOW)
+  b.draw(floor(x), floor(y), ORANGE)
+}
+
+void Player::update(float dt)
+{
 }
