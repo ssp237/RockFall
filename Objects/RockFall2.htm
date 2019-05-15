@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\RockFall2.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\RockFall2.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed May 15 15:49:34 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed May 15 16:31:43 2019
 <BR><P>
 <H3>Maximum Stack Usage =        248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -292,7 +292,7 @@ Global Symbols
 
 <P><STRONG><a name="[168]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
-<P><STRONG><a name="[be]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<P><STRONG><a name="[c0]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
@@ -588,9 +588,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
+<BR>[Called By]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
 </UL>
 
 <P><STRONG><a name="[af]"></a>free</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, h1_free.o(.text))
@@ -608,10 +608,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__assert_puts
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 </UL>
-<BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStop
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_HAL_SetPinDir
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetBasicTransfer
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetOpenDrainCmd
+<BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetOpenDrainCmd
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetMuxMode
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_HAL_SetPinOutput
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_HAL_ReadPinInput
@@ -621,7 +618,6 @@ Global Symbols
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetDisableDmaRequestAfterTCDDoneCmd
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetChannelMajorLink
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetBandwidth
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnablePortClock
 <LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetScatterGatherLink
 <LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_PushSTCDToHTCD
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_ClaimChannel
@@ -631,9 +627,13 @@ Global Symbols
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_RtcOscInit
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_OscInit
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_ClockInit
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStop
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_HAL_SetPinDir
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetBasicTransfer
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetNbytes
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetMajorCount
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetAttribute
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnablePortClock
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnableUartClock
 </UL>
 
@@ -679,7 +679,7 @@ Global Symbols
 
 <P><STRONG><a name="[e]"></a>_terminate_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
 
-<P><STRONG><a name="[4]"></a>_init_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+<P><STRONG><a name="[6]"></a>_init_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
 
 <P><STRONG><a name="[ae]"></a>__Heap_Full</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, init_alloc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
@@ -708,7 +708,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
 </UL>
 
-<P><STRONG><a name="[3]"></a>__Heap_DescSize</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, h1_init.o(.text), UNUSED)
+<P><STRONG><a name="[5]"></a>__Heap_DescSize</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, h1_init.o(.text), UNUSED)
 
 <P><STRONG><a name="[b2]"></a>abort</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, abort.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48 + Unknown Stack Size
@@ -718,10 +718,10 @@ Global Symbols
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
 <LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to arm_exceptions_c]::__default_terminate_handler()
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::terminate()
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 
 <P><STRONG><a name="[b1]"></a>__assert_puts</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, assert_puts.o(.text))
@@ -744,11 +744,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _ttywrch
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__assert_puts
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
 </UL>
 
 <P><STRONG><a name="[ab]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
 </UL>
@@ -762,11 +762,18 @@ Global Symbols
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
 </UL>
 
+<P><STRONG><a name="[ba]"></a>__sig_exit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, defsig_exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT
+</UL>
+
 <P><STRONG><a name="[b7]"></a>__rt_SIGABRT</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_abrt_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT_inner
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT_inner
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 </UL>
@@ -774,8 +781,8 @@ Global Symbols
 <P><STRONG><a name="[b5]"></a>__rt_SIGRTMEM</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_rtmem_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Broken
@@ -785,48 +792,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
 <LI>Call Chain = std::terminate() &rArr; __cxa_get_globals &rArr; __ARM_exceptions_buffer_init &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_new_handler()
-</UL>
-
-<P><STRONG><a name="[174]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
-
-<P><STRONG><a name="[175]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
-
-<P><STRONG><a name="[176]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, indicate_semi.o(.text), UNUSED)
-
-<P><STRONG><a name="[a7]"></a>exit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
-<LI>Call Chain = exit
-</UL>
-<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
-</UL>
-<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
-</UL>
-
-<P><STRONG><a name="[bb]"></a>__sig_exit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, defsig_exit.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT
-</UL>
-
-<P><STRONG><a name="[ba]"></a>__rt_SIGABRT_inner</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_abrt_inner.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
-</UL>
-<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT
-</UL>
-
-<P><STRONG><a name="[bc]"></a>__rt_SIGRTMEM_inner</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, defsig_rtmem_inner.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
-</UL>
-<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
 </UL>
 
 <P><STRONG><a name="[bd]"></a>__cxa_get_globals</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, arm_exceptions_globs.o(.text))
@@ -835,26 +804,57 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
-<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_eh_globals_addr
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_eh_globals_addr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::terminate()
 </UL>
 
-<P><STRONG><a name="[c0]"></a>__rt_eh_globals_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_eh_globals_addr_intlibspace.o(.text))
+<P><STRONG><a name="[174]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[175]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[176]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[be]"></a>__rt_eh_globals_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_eh_globals_addr_intlibspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
 </UL>
 
-<P><STRONG><a name="[bf]"></a>__default_signal_display</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, defsig_general.o(.text))
+<P><STRONG><a name="[a7]"></a>exit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[c1]"></a>__default_signal_display</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, defsig_general.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __default_signal_display &rArr; _ttywrch
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ttywrch
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT_inner
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT_inner
 </UL>
 
-<P><STRONG><a name="[c1]"></a>__ARM_exceptions_buffer_init</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, arm_exceptions_mem.o(.text))
+<P><STRONG><a name="[bb]"></a>__rt_SIGABRT_inner</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_abrt_inner.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT
+</UL>
+
+<P><STRONG><a name="[bc]"></a>__rt_SIGRTMEM_inner</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, defsig_rtmem_inner.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+</UL>
+
+<P><STRONG><a name="[bf]"></a>__ARM_exceptions_buffer_init</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, arm_exceptions_mem.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = __ARM_exceptions_buffer_init &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
@@ -914,8 +914,8 @@ Global Symbols
 <P><STRONG><a name="[c9]"></a>CLOCK_HAL_GetFllRefClk</STRONG> (Thumb, 72 bytes, Stack size 32 bytes, fsl_mcg_hal.o(i.CLOCK_HAL_GetFllRefClk))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_TestFllExternalRefFreq
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_TestFllExternalRefFreq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetFllClk
 </UL>
@@ -940,10 +940,10 @@ Global Symbols
 <P><STRONG><a name="[d2]"></a>CLOCK_HAL_GetOutClk</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, fsl_mcg_hal.o(i.CLOCK_HAL_GetOutClk))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetPll0Clk
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetPll0Clk
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetInternalRefClk
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetFllClk
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetBusClockFreq
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetSystemClockFreq
@@ -969,12 +969,12 @@ Global Symbols
 <P><STRONG><a name="[d8]"></a>CLOCK_HAL_SetFbeMode</STRONG> (Thumb, 228 bytes, Stack size 40 bytes, fsl_mcg_hal_modes.o(i.CLOCK_HAL_SetFbeMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = CLOCK_HAL_SetFbeMode &rArr; CLOCK_HAL_GetMcgMode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_IsPllSelected
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgMode
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_IsPllSelected
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_IsOsc0Stable
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetFllSrc
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetClkOutStat
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_TestOscFreq
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgMode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
 </UL>
@@ -982,11 +982,11 @@ Global Symbols
 <P><STRONG><a name="[d9]"></a>CLOCK_HAL_SetFbiMode</STRONG> (Thumb, 170 bytes, Stack size 32 bytes, fsl_mcg_hal_modes.o(i.CLOCK_HAL_SetFbiMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = CLOCK_HAL_SetFbiMode &rArr; CLOCK_HAL_GetMcgMode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetInternalRefClkMode
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgMode
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetInternalRefClkMode
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetFllSrc
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetClkOutStat
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_UpdateFastClkInternalRefDiv
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgMode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
 </UL>
@@ -1007,11 +1007,11 @@ Global Symbols
 <P><STRONG><a name="[dc]"></a>CLOCK_HAL_SetPbeMode</STRONG> (Thumb, 228 bytes, Stack size 40 bytes, fsl_mcg_hal_modes.o(i.CLOCK_HAL_SetPbeMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = CLOCK_HAL_SetPbeMode &rArr; CLOCK_HAL_GetMcgMode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_PrepareOsc
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgMode
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_PrepareOsc
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_IsPllSelected
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetClkOutStat
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_TestOscFreq
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgMode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
 </UL>
@@ -1048,8 +1048,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_EnablePortClock &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
 </UL>
@@ -1058,8 +1058,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_EnableUartClock &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Init
 </UL>
@@ -1103,10 +1103,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_OscInit &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOsc0Mode
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSC_HAL_SetCapacitor
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOsc0Mode
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetOscerConfigration
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitOsc0
 </UL>
@@ -1115,8 +1115,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_RtcOscInit &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_HAL_SetOscillatorCmd
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_HAL_SetOscillatorCmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitRtcOsc
 </UL>
@@ -1125,12 +1125,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_SetConfiguration &rArr; CLOCK_SYS_SetMcgMode &rArr; CLOCK_HAL_SetPbeMode &rArr; CLOCK_HAL_GetMcgMode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOutDiv
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOutDiv
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetOscerConfigration
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetCoreClockFreq
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetSimConfigration
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_ClockInit
 </UL>
@@ -1138,12 +1138,12 @@ Global Symbols
 <P><STRONG><a name="[eb]"></a>CLOCK_SYS_SetMcgMode</STRONG> (Thumb, 340 bytes, Stack size 40 bytes, fsl_clock_manager.o(i.CLOCK_SYS_SetMcgMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = CLOCK_SYS_SetMcgMode &rArr; CLOCK_HAL_SetPbeMode &rArr; CLOCK_HAL_GetMcgMode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_UpdateFastClkInternalRefDiv
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_EnablePll0InFllMode
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetPbeMode
+<BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetPbeMode
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbiMode
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbeMode
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgMode
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_UpdateFastClkInternalRefDiv
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_EnablePll0InFllMode
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgPeeToFbe
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetLowPowerModeCmd
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetClkOutSrc
@@ -1278,11 +1278,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 148 + Unknown Stack Size
 <LI>Call Chain = DbgConsole_Init &rArr; CLOCK_SYS_GetUartFreq &rArr; CLOCK_SYS_GetBusClockFreq &rArr; CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_HAL_SetParityMode
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_HAL_SetParityMode
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_HAL_SetBaudRate
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetUartFreq
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnableUartClock
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
 </UL>
@@ -1344,8 +1344,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[fc]"></a>EDMA_HAL_HTCDClearReg</STRONG> (Thumb, 114 bytes, Stack size 0 bytes, fsl_edma_hal.o(i.EDMA_HAL_HTCDClearReg))
-<BR><BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PushDescriptorToReg
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_ClaimChannel
+<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_ClaimChannel
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PushDescriptorToReg
 </UL>
 
 <P><STRONG><a name="[101]"></a>EDMA_HAL_PushSTCDToHTCD</STRONG> (Thumb, 176 bytes, Stack size 16 bytes, fsl_edma_hal.o(i.EDMA_HAL_PushSTCDToHTCD))
@@ -1370,10 +1370,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = EDMA_HAL_STCDSetBasicTransfer &rArr; EDMA_HAL_STCDSetAttribute &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetNbytes
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetNbytes
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetMajorCount
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetAttribute
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PrepareDescriptorTransfer
 </UL>
@@ -1455,8 +1455,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
 <LI>Call Chain = I2C_HAL_SendStop &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_GetStatusFlag
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_GetStatusFlag
 </UL>
 <BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2Cx_IRQHandler
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_PowerControl
@@ -1633,9 +1633,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 164 + Unknown Stack Size
 <LI>Call Chain = hardware_init &rArr; dbg_uart_init &rArr; DbgConsole_Init &rArr; CLOCK_SYS_GetUartFreq &rArr; CLOCK_SYS_GetBusClockFreq &rArr; CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnablePortClock
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
+<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_ClockInit
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnablePortClock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1643,7 +1643,7 @@ Global Symbols
 <P><STRONG><a name="[11]"></a>init_data_bss</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, startup.o(i.init_data_bss))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mk64f12.o(.text)
 </UL>
-<P><STRONG><a name="[a6]"></a>main</STRONG> (Thumb, 94 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[a6]"></a>main</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 164 + Unknown Stack Size
 <LI>Call Chain = main &rArr; hardware_init &rArr; dbg_uart_init &rArr; DbgConsole_Init &rArr; CLOCK_SYS_GetUartFreq &rArr; CLOCK_SYS_GetBusClockFreq &rArr; CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
@@ -1994,20 +1994,20 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 132 + Unknown Stack Size
 <LI>Call Chain = I2C_Control &rArr; CLOCK_SYS_GetBusClockFreq &rArr; CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
-<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetBaudRate
-<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetAddress7bit
-<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetAddress10bit
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStop
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_HAL_SetPinDir
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetBusClockFreq
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PTx_Base
+<BR>[Calls]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PTx_Base
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetMuxMode
 <LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetIntCmd
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_IsMaster
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_HAL_SetPinOutput
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_HAL_ReadPinInput
 <LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_HAL_ClearPinOutput
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetBaudRate
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetAddress7bit
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetAddress10bit
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStop
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_HAL_SetPinDir
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetBusClockFreq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C2_Control
 <LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C1_Control
@@ -2075,10 +2075,10 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
 <LI>Call Chain = I2C_Initialize &rArr; EDMA_DRV_RequestChannel &rArr; EDMA_DRV_ClaimChannel &rArr; DMAMUX_HAL_SetChannelCmd &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_RequestChannel
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_InstallCallback
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetOpenDrainCmd
+<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetOpenDrainCmd
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetMuxMode
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_RequestChannel
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_InstallCallback
 <LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C2_Initialize
@@ -2090,15 +2090,15 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
 <LI>Call Chain = I2C_MasterReceive &rArr; EDMA_DRV_PrepareDescriptorTransfer &rArr; EDMA_HAL_STCDSetBasicTransfer &rArr; EDMA_HAL_STCDSetAttribute &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStart
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_StartChannel
-<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PushDescriptorToReg
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetScatterGatherCmd
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetScatterGatherCmd
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetHalfCompleteIntCmd
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetDisableDmaRequestAfterTCDDoneCmd
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetChannelMajorLink
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetBandwidth
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PrepareDescriptorTransfer
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStart
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_StartChannel
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PushDescriptorToReg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C2_MasterReceive
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C1_MasterReceive
@@ -2109,15 +2109,15 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
 <LI>Call Chain = I2C_MasterTransmit &rArr; EDMA_DRV_PrepareDescriptorTransfer &rArr; EDMA_HAL_STCDSetBasicTransfer &rArr; EDMA_HAL_STCDSetAttribute &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStart
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_StartChannel
-<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PushDescriptorToReg
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetScatterGatherCmd
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetScatterGatherCmd
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetHalfCompleteIntCmd
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetDisableDmaRequestAfterTCDDoneCmd
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetChannelMajorLink
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetBandwidth
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PrepareDescriptorTransfer
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStart
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_StartChannel
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PushDescriptorToReg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C2_MasterTransmit
 <LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C1_MasterTransmit
@@ -2128,10 +2128,10 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 96 + Unknown Stack Size
 <LI>Call Chain = I2C_PowerControl &rArr; I2C_HAL_SendStop &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStop
-<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_Init
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetIntCmd
+<BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetIntCmd
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_IsMaster
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStop
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C2_PowerControl
 <LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C1_PowerControl
@@ -2173,9 +2173,7 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 112 + Unknown Stack Size
 <LI>Call Chain = I2Cx_IRQHandler &rArr; I2C_HAL_SendStop &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStop
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStart
-<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_WriteByte
+<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_WriteByte
 <LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetDmaCmd
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SetDirMode
 <LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendNak
@@ -2183,6 +2181,8 @@ Local Symbols
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_ReadByte
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_GetStatusFlag
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_ClearInt
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStop
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_SendStart
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C2_IRQHandler
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C1_IRQHandler
@@ -2288,8 +2288,8 @@ Local Symbols
 </UL>
 
 <P><STRONG><a name="[d7]"></a>CLOCK_HAL_IsOsc0Stable</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, fsl_mcg_hal_modes.o(i.CLOCK_HAL_IsOsc0Stable))
-<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_PrepareOsc
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbeMode
+<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbeMode
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_PrepareOsc
 </UL>
 
 <P><STRONG><a name="[d1]"></a>CLOCK_HAL_IsPllSelected</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, fsl_mcg_hal_modes.o(i.CLOCK_HAL_IsPllSelected))

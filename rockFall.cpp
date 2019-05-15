@@ -20,6 +20,10 @@ RockFall::RockFall()
 	game = new GameController(*board);
 }
 
+void RockFall::run()
+{
+}
+
 void GameController::draw(GameBoard &board)
 {
 	player->draw(board);
@@ -27,6 +31,15 @@ void GameController::draw(GameBoard &board)
   {
   }
 }
+
+void GameController::render() 
+{
+}
+
+void GameController::preUpdate()
+{
+}
+
 
 /**
  * Process the update loop for this GameController

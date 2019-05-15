@@ -27,14 +27,37 @@ Project File Date:  05/15/2019
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling main.cpp...
-main.cpp(94): warning:  #111-D: statement is unreachable
-  	return 0;
-main.cpp: 1 warning, 0 errors
-compiling hardware_init.c...
+compiling rockFall.cpp...
+gameObject.h(43): warning:  #1300-D: getType inherits implicit virtual
+    ObstacleType getType();
+gameObject.h(44): warning:  #1300-D: draw inherits implicit virtual
+    void draw(GameBoard &b);
+gameObject.h(45): warning:  #1300-D: update inherits implicit virtual
+    void update(float dt);
+gameObject.h(55): warning:  #1300-D: getType inherits implicit virtual
+    ObstacleType getType();
+gameObject.h(56): warning:  #1300-D: draw inherits implicit virtual
+    void draw(GameBoard &b);
+gameObject.h(57): warning:  #1300-D: update inherits implicit virtual
+    void update(float dt);
+gameObject.h(60): warning:  #1-D: last line of file ends without a newline
+  };
+rockFall.h(27): warning:  #1300-D: render inherits implicit virtual
+    void render();
+rockFall.h(28): warning:  #1300-D: update inherits implicit virtual
+    void update(float dt);
+rockFall.h(29): warning:  #1300-D: preUpdate inherits implicit virtual
+    void preUpdate();
+rockFall.h(30): warning:  #1300-D: draw inherits implicit virtual
+    void draw(GameBoard &board);
+rockFall.h(52): warning:  #1-D: last line of file ends without a newline
+  };
+rockFall.cpp(53): warning:  #1-D: last line of file ends without a newline
+  }
+rockFall.cpp: 13 warnings, 0 errors
 linking...
-Program Size: Code=14216 RO-data=2536 RW-data=40 ZI-data=2256  
-".\Objects\RockFall2.axf" - 0 Error(s), 1 Warning(s).
+Program Size: Code=14180 RO-data=2536 RW-data=40 ZI-data=2256  
+".\Objects\RockFall2.axf" - 0 Error(s), 13 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -216,7 +239,7 @@ Package Vendor: Keil
       Source file:   platform\devices\startup.c
       Source file:   platform\devices\MK64F12\startup\system_MK64F12.c
       Include file:  addon_cmsis\Driver\MK64F\Config\RTE_Device.h
-Build Time Elapsed:  00:00:18
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

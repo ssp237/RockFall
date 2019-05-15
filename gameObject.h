@@ -26,9 +26,9 @@ public:
   float x;
   float y;
 
-  virtual ObstacleType getType();
-  virtual void draw(GameBoard &b);
-  virtual void update(float dt);
+  virtual ObstacleType getType() = 0;
+  virtual void draw(GameBoard &b) = 0;
+  virtual void update(float dt) = 0;
 
 private:
 };

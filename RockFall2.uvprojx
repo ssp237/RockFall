@@ -397,6 +397,26 @@
               <FileType>5</FileType>
               <FilePath>.\gameboard.h</FilePath>
             </File>
+            <File>
+              <FileName>gameObject.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\gameObject.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>rockFall.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\rockFall.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>rockFall.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\rockFall.h</FilePath>
+            </File>
+            <File>
+              <FileName>gameObject.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\gameObject.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

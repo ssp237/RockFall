@@ -8,10 +8,10 @@ class Controller
 {
 public:
   Obstacle *objects;
-  virtual void render();
-  virtual void update(float dt);
-  virtual void preUpdate();
-  virtual void draw(GameBoard &board);
+  virtual void render() = 0;
+  virtual void update(float dt) = 0;
+  virtual void preUpdate() = 0;
+  virtual void draw(GameBoard &board) = 0;
 
 private:
   GameBoard board;
@@ -43,8 +43,6 @@ private:
 class RockFall
 {
 public:
-  void exitScreen(Controller screen, int exitcode);
-  void setScreen(Controller c);
   void run();
   RockFall();
 
