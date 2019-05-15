@@ -12,7 +12,7 @@ Player::Player(float init_x, float init_y)
   dy = 0;
 }
 
-Player::draw(Board b)
+void Player::draw(Board b)
 {
   b.draw(floor(x), floor(y), YELLOW)
 }

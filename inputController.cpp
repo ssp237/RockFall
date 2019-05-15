@@ -21,7 +21,7 @@ InputController::InputController()
   state = new ACCELEROMETER_STATE;
 }
 
-InputController::didDown()
+bool InputController::didDown()
 {
   return false;
 }
