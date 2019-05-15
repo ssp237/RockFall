@@ -392,6 +392,11 @@
               <FileType>8</FileType>
               <FilePath>.\main.cpp</FilePath>
             </File>
+            <File>
+              <FileName>gameboard.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\gameboard.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

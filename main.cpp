@@ -95,7 +95,7 @@ int main(){
 	board_display();
 	while(1){
 		delay();
-		//insert draw here
+		//tbd
 	}
 	return 0;
 }

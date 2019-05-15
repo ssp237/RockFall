@@ -1,31 +1,26 @@
 #include "gameboard.h"
+#include "stdint.h"
 
 //Constructor
 GameBoard::GameBoard()
 {
-  int[] board = new int[17];
+  board = new uint8_t[17];
 }
 
-GameBoard::draw(int x, int y, Color c)
-{
+void GameBoard::draw(int x, int y, Color c) {
 }
 
-GameBoard::pushtoBoard()
-{
+void GameBoard::pushToBoard() {
 }
 
-GameBoard::resetBoard()
-{
+void GameBoard::resetBoard() {
 }
 
-GameBoard::drawGreen(int x, int y)
-{
+void GameBoard::drawGreen(int x, int y) {
 }
 
-GameBoard::drawYellow(int x, int y)
-{
+void GameBoard::drawYellow(int x, int y) {
 }
 
-GameBoard::drawRed(int x, int y)
-{
+void GameBoard::drawRed(int x, int y) {
 }

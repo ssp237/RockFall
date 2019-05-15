@@ -1,5 +1,4 @@
-#pragma once
-
+#include "stdint.h"
 /*
 *   Enumeration of possible colors
 */
@@ -19,10 +18,11 @@ enum Color
 class GameBoard
 {
 public:
-  int[] board;
+  uint8_t * board;
   void draw(int x, int y, Color c);
   void pushToBoard();
   void resetBoard();
+	GameBoard();
 
 private:
   void drawGreen(int x, int y);
