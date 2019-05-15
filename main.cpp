@@ -4,11 +4,13 @@ extern "C" {
 	#include "board.h"
 	#include "Driver_I2C.h"
 	#include <stdio.h>
+	#include "stdlib.h"
+	#include "gameboard.h"
 
-extern ARM_DRIVER_I2C Driver_I2C0;
-static ARM_DRIVER_I2C * topDriver = &Driver_I2C0;
-extern ARM_DRIVER_I2C Driver_I2C1;
-static ARM_DRIVER_I2C * botDriver = &Driver_I2C1;
+	extern ARM_DRIVER_I2C Driver_I2C0;
+	static ARM_DRIVER_I2C * topDriver = &Driver_I2C0;
+	extern ARM_DRIVER_I2C Driver_I2C1;
+	static ARM_DRIVER_I2C * botDriver = &Driver_I2C1;
 }
 
 #define LED_ON 1
@@ -27,12 +29,18 @@ static ARM_DRIVER_I2C * botDriver = &Driver_I2C1;
 uint32_t adr = 0x70;
 uint8_t topBuff[17];
 uint8_t botBuff[17];
+int delayTime = 1000;
 
 void i2c_init (void) {
   topDriver->Initialize   (NULL);
   topDriver->PowerControl (ARM_POWER_FULL);
   topDriver->Control      (ARM_I2C_BUS_SPEED, ARM_I2C_BUS_SPEED_FAST);
   topDriver->Control      (ARM_I2C_BUS_CLEAR, 0);
+	
+	botDriver->Initialize   (NULL);
+  botDriver->PowerControl (ARM_POWER_FULL);
+  botDriver->Control      (ARM_I2C_BUS_SPEED, ARM_I2C_BUS_SPEED_FAST);
+  botDriver->Control      (ARM_I2C_BUS_CLEAR, 0);
 }
 
 void board_init (void) {
@@ -61,6 +69,7 @@ void board_init (void) {
 void board_display() {
 	topDriver->MasterTransmit(adr, topBuff, 17, false);		
 	while (topDriver->GetStatus().busy);
+	
 	botDriver->MasterTransmit(adr, botBuff, 17, false);		
 	while (botDriver->GetStatus().busy);
 }
@@ -73,12 +82,20 @@ void clearBuffer() {
   }
 }
 
+void delay(void){
+	int j;
+	for(j=0; j<delayTime; j++);
+}
+
 int main(){
 	hardware_init();	
 	i2c_init();
 	board_init();
 	clearBuffer();
-	topBuff[4] = 7;
 	board_display();
-	
+	while(1){
+		delay();
+		//insert draw here
+	}
+	return 0;
 }
