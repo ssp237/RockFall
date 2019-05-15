@@ -1,4 +1,4 @@
-#include "board.h"
+#include "gameboard.h"
 
 #pragma once
 

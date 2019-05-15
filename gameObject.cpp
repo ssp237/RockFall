@@ -1,9 +1,10 @@
 #include "gameObject.h"
+#include "cmath"
 
 /*
 *   Create a player with initial position (init_x, init_y) and velocity 0.
 */
-Player::Player(int init_x, int init_y)
+Player::Player(float init_x, float init_y)
 {
   x = init_x;
   y = init_y;
@@ -13,5 +14,5 @@ Player::Player(int init_x, int init_y)
 
 Player::draw(Board b)
 {
-  b.draw(x, y, YELLOW)
+  b.draw(floor(x), floor(y), YELLOW)
 }
