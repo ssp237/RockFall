@@ -118,7 +118,7 @@
 
 // <e> I2C1 (Inter-Integrated Circuit Interface 1) [Driver_I2C1]
 // <i> Enable or disable Driver_I2C1 in component ::CMSIS Driver:I2C
-#define RTE_I2C1                        0
+#define RTE_I2C1                        1
 
 //   <o0> I2C1_SDA <0=>PTC11 <1=>PTE0
 //   <o1> I2C1_SCL <0=>PTC10 <1=>PTE1

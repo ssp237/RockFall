@@ -387,6 +387,11 @@
               <FileType>8</FileType>
               <FilePath>.\test.cpp</FilePath>
             </File>
+            <File>
+              <FileName>LEDtesty.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\LEDtesty.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
