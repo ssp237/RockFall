@@ -1,4 +1,4 @@
-.\objects\ledtesty.o: LEDtesty.cpp
+.\objects\ledtesty.o: LEDtesty.c
 .\objects\ledtesty.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.8.0\Board\board_accelerometer.h
 .\objects\ledtesty.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ledtesty.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.3.0\platform\utilities\inc\fsl_debug_console.h

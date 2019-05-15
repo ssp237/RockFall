@@ -388,9 +388,9 @@
               <FilePath>.\test.cpp</FilePath>
             </File>
             <File>
-              <FileName>LEDtesty.cpp</FileName>
+              <FileName>main.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>.\LEDtesty.cpp</FilePath>
+              <FilePath>.\main.cpp</FilePath>
             </File>
           </Files>
         </Group>
