@@ -2,6 +2,8 @@
 
 #pragma once
 
+const float g = 5;
+
 /*
 *   Enumeration of possible obstacle types (used to resolve collisions and 
 *   set behavior)
@@ -27,8 +29,8 @@ public:
   float y;
 
   virtual ObstacleType getType();
-  virtual void draw(Board b);
-  virtual void update();
+  virtual void draw(Board &b);
+  virtual void update(float dt);
 
 private:
 }
@@ -39,10 +41,22 @@ private:
 class Player : public Obstacle
 {
 public:
-  Player(int init_x, int init_y);
+  Player(float init_x, float init_y);
   ObstacleType getType();
-  void draw(Board b);
-  void update();
+  void draw(Board &b);
+  void update(float dt);
+
+private:
+}
+
+/**Implementation of Obstacle : rock */
+class Rock : public Obstacle
+{
+public:
+  Rock(float init_x, float init_y);
+  ObstacleType getType();
+  void draw(Board &b);
+  void update(float dt);
 
 private:
 }
