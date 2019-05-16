@@ -40,6 +40,13 @@ ObstacleType Player::getType()
   return PLAYER;
 }
 
+Rock::Rock() {
+	x = -1;
+	y = -1;
+	dx = 0;
+	dy = 0;
+}
+
 /**
  * Create a rock with position init_x, init_y and velocity 0
  */
@@ -73,6 +80,14 @@ ObstacleType Rock::getType()
   return ROCK;
 }
 
+Coin::Coin() {
+	x = -1; 
+	y = -1;
+	dx = 0;
+	dy = 0;
+	fall_speed = 0.01;
+}
+
 /**
  * Create a coin with position init_x, init_y and velocity 0
  */
@@ -82,6 +97,7 @@ Coin::Coin(float init_x, float init_y)
   y = init_y;
   dx = 0;
   dy = 0;
+	fall_speed = 0.01;
 }
 
 /**

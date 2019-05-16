@@ -1,6 +1,7 @@
 #ifndef rockFall_h
 #define rockFall_h
 #include "gameObject.h"
+#include "stdint.h"
 /* 
 *   Implementation of an abstract class to control different game modes. 
 *   Must provide certain base functionality that I have not yet decided in order
@@ -35,12 +36,12 @@ public:
 
 private:
   GameBoard board;
-  uint numCoins;
-  uint numRocks;
-  uint rockCount;
-  uint coinCount;
-  uint maxRockCount = 100;
-  uint maxCoinCount = 50;
+  uint8_t numCoins;
+  uint8_t numRocks;
+  uint16_t rockCount;
+  uint16_t coinCount;
+  uint16_t maxRockCount;
+  uint16_t maxCoinCount;
 };
 
 /* 

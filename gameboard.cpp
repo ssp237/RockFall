@@ -11,6 +11,7 @@ GameBoard::GameBoard()
 
 void GameBoard::draw(int x, int y, Color c)
 {
+	if (x < 1 || y < 1 || x > 8 || y > 16) return; 
   switch (c)
   {
   case RED:

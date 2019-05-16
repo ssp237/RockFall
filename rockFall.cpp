@@ -1,4 +1,5 @@
 #include "rockFall.h"
+#include "gameObject.h"
 #include "stdlib.h"
 extern "C"
 {
@@ -22,13 +23,16 @@ GameController::GameController(GameBoard &board_ref)
 {
   player = new Player(4, 1);
   board = board_ref;
-  rocks = new Rock[10];
-  rocks[0] = new Rock(8, 16);
+	maxRockCount = 4500;
+	maxCoinCount = 5000; 
+  rocks = new Rock[15];
+  rocks[0].x = 8;
+	rocks[0].y = 17;
   numRocks = 1;
-  coins = new Coin[10];
+  coins = new Coin[15];
   numCoins = 0;
-  rockCount = rand() % maxRockCount + 1;
-  coinCount = rand() % maxCoinCount + 1;
+  rockCount = rand() % maxRockCount + maxRockCount;
+  coinCount = rand() % maxCoinCount + maxCoinCount;
 }
 
 RockFall::RockFall()
@@ -67,16 +71,18 @@ void GameController::preUpdate()
   rockCount--;
   if (rockCount <= 0)
   {
-    rockCount = rand() % maxRockCount + 1;
-    rocks[numRocks] = new Rock(rand() % 7 + 1, 16);
+    rockCount = rand() % maxRockCount + maxRockCount;
+		rocks[numRocks].x = rand() % 7 + 1;
+		rocks[numRocks].y = 17;
     numRocks += 1;
   }
 
   coinCount--;
   if (coinCount <= 0)
   {
-    coinCount = rand() % maxCoinCount + 1;
-    coins[numCoins] = new Coin(rand() % 7 + 1, 16);
+    coinCount = rand() % maxCoinCount + maxCoinCount;
+		coins[numCoins].x = rand() % 7 + 1;
+		coins[numCoins].y = 17;
     numCoins += 1;
   }
 }

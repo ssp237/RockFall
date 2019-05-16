@@ -3,7 +3,7 @@
 
 #include "gameboard.h"
 
-const float g = 0.5;
+const float g = 0.000005;
 
 /*
 *   Enumeration of possible obstacle types (used to resolve collisions and 
@@ -54,6 +54,7 @@ private:
 class Rock : public Obstacle
 {
 public:
+	Rock();
   Rock(float init_x, float init_y);
   ObstacleType getType();
   void draw(GameBoard &b);
@@ -65,12 +66,13 @@ private:
 class Coin : public Obstacle
 {
 public:
+	Coin();
   Coin(float init_x, float init_y);
   ObstacleType getType();
   void draw(GameBoard &b);
   void update(float dt);
 
 private:
-  const int fall_speed = 0.1;
+  float fall_speed;
 };
 #endif
