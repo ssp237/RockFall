@@ -24,9 +24,11 @@ GameController::GameController(GameBoard &board_ref)
   board = board_ref;
   rocks = new Rock[10];
   rocks[1] = new Rock(8, 16);
-  numRocks = 0;
+  numRocks = 1;
   coins = new Coin[10];
   numCoins = 0;
+  rockCount = rand() % maxRockCount + 1;
+  coinCount = rand() % maxCoinCount + 1;
 }
 
 RockFall::RockFall()
