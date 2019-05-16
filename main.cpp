@@ -73,6 +73,7 @@ void board_display(GameBoard * gb) {
 	
 	botDriver->MasterTransmit(adr, gb->botBuff, 17, false);		
 	while (botDriver->GetStatus().busy);
+	gb->resetBoard();
 }
 
 void delay(void){
