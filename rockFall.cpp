@@ -36,6 +36,7 @@ GameController::GameController(GameBoard &board_ref)
   numCoins = 0;
   rockCount = rand() % maxRockCount + maxRockCount;
   coinCount = rand() % maxCoinCount + maxCoinCount;
+  coinsCollected = 0;
 }
 
 RockFall::RockFall()
@@ -145,7 +146,13 @@ void GameController::update(float dt)
   for (int i = 0; i < numCoins; i++)
   {
     coins[i].update(dt);
-    if (floor(coins[i].y) == -1)
+    if ((floor(coins[i].y) == 0) && (floor(player->x) == floor(coins[i].x)))
+    {
+      coinCount++;
+      coins[i].y = rand() % 10 + 17;
+      coins[i].x = rand() % 7 + 1;
+    }
+    else if (floor(coins[i].y) == -1)
     {
       coins[i].y = rand() % 10 + 17;
       coins[i].x = rand() % 7 + 1;

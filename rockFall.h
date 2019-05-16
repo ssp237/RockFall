@@ -28,6 +28,7 @@ public:
   Player *player;
   Rock *rocks;
   Coin *coins;
+  unsigned int coinsCollected;
   void render();
   void update(float dt);
   void preUpdate();
