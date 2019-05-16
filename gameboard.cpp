@@ -62,3 +62,20 @@ void GameBoard::drawOrange(int x, int y)
 	drawRed(x, y);
 	drawGreen(x, y);
 }
+
+void GameBoard::deathScreen(){
+	topBuff[16] |= 56;
+	topBuff[14] |= 40;
+	topBuff[12] |= 48;
+	topBuff[10] |= 40;
+	topBuff[8] |= 36;
+	topBuff[4] |= 56;
+	topBuff[2] |= 16;
+	botBuff[16] |= 16;
+	botBuff[14] |= 56;
+	botBuff[10] |= 56;
+	botBuff[8] |= 40;
+	botBuff[6] |= 56;
+	botBuff[4] |= 32;
+	botBuff[2] |= 32;
+}
