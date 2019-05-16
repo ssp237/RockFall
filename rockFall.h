@@ -25,6 +25,8 @@ class GameController : public Controller
 {
 public:
   Player *player;
+  Rock *rocks;
+  Coin *coins;
   void render();
   void update(float dt);
   void preUpdate();
@@ -33,7 +35,8 @@ public:
 
 private:
   GameBoard board;
-  int objectSize;
+  uint numCoins;
+  uint numRocks;
 };
 
 /* 

@@ -20,8 +20,11 @@ ACCELEROMETER_STATE state;
 GameController::GameController(GameBoard &board_ref)
 {
   player = new Player(4, 1);
-  objectSize = 1;
   board = board_ref;
+  rocks = new Rock[10];
+  numRocks = 0;
+  coins = new Coin[10];
+  numCoins = 0;
 }
 
 RockFall::RockFall()
@@ -38,8 +41,13 @@ void RockFall::run()
 void GameController::draw(GameBoard &board)
 {
   player->draw(board);
-  for (int i = 0; i < objectSize; i++)
+  for (int i = 0; i < numRocks; i++)
   {
+    rocks[i].draw(board);
+  }
+  for (int i = 0; i < numCoins; i++)
+  {
+    coins[i].draw(board);
   }
 }
 
@@ -81,7 +89,12 @@ void GameController::update(float dt)
     player->dx = 0;
   }
   player->update(dt);
-  for (int i = 0; i < objectSize; i++)
+  for (int i = 0; i < numRocks; i++)
   {
+    rocks[i].update(dt);
+  }
+  for (int i = 0; i < numCoins; i++)
+  {
+    coins[i].update(dt);
   }
 }
