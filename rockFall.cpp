@@ -66,12 +66,15 @@ void GameController::update(float dt)
   }
   else if (state.x > slowTurn)
   { //Small right move
+    player->dx = 0.01;
   }
   else if (state.x < (-1 * fastTurn))
   { //Big left move
+    player->dx = -0.1;
   }
   else if (state.x < (-1 * slowTurn))
   { //Small left move
+    player->dx = -0.01;
   }
   else
   {
