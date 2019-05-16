@@ -25,11 +25,11 @@ GameController::GameController(GameBoard &board_ref)
 {
   player = new Player(4, 1);
   board = board_ref;
-	maxRockCount = 4500;
-	maxCoinCount = 5000; 
+  maxRockCount = 4500;
+  maxCoinCount = 5000;
   rocks = new Rock[15];
   rocks[0].x = 8;
-	rocks[0].y = 17;
+  rocks[0].y = 17;
   numRocks = 1;
   coins = new Coin[15];
   numCoins = 0;
@@ -45,12 +45,14 @@ RockFall::RockFall()
 
 void RockFall::run()
 {
-	if (isDed){
-		board->deathScreen();
-	}
-	else{
-		game->render();
-	}
+  if (isDed)
+  {
+    board->deathScreen();
+  }
+  else
+  {
+    game->render();
+  }
 }
 
 void GameController::draw(GameBoard &board)
@@ -76,20 +78,20 @@ void GameController::render()
 void GameController::preUpdate()
 {
   rockCount--;
-  if (rockCount <= 0)
+  if (rockCount <= 0 && numRocks < 15)
   {
     rockCount = rand() % maxRockCount + maxRockCount;
-		rocks[numRocks].x = rand() % 7 + 1;
-		rocks[numRocks].y = 17;
+    rocks[numRocks].x = rand() % 7 + 1;
+    rocks[numRocks].y = 17;
     numRocks += 1;
   }
 
   coinCount--;
-  if (coinCount <= 0)
+  if (coinCount <= 0 && numCoins < 15)
   {
     coinCount = rand() % maxCoinCount + maxCoinCount;
-		coins[numCoins].x = rand() % 7 + 1;
-		coins[numCoins].y = 17;
+    coins[numCoins].x = rand() % 7 + 1;
+    coins[numCoins].y = 17;
     numCoins += 1;
   }
 }
@@ -124,12 +126,23 @@ void GameController::update(float dt)
   for (int i = 0; i < numRocks; i++)
   {
     rocks[i].update(dt);
-		if ((floor(rocks[i].y)==0) && (floor(player->x) == floor(rocks[i].x))){
-			isDed = true;
-		}
+    if ((floor(rocks[i].y) == 0) && (floor(player->x) == floor(rocks[i].x)))
+    {
+      isDed = true;
+    }
+    else if (floor(rocks[i].y) == -1)
+    {
+      rocks[i].y = rand() % 10 + 17;
+      rocks[i].x = rand() % 7 + 1;
+    }
   }
   for (int i = 0; i < numCoins; i++)
   {
     coins[i].update(dt);
+    if (floor(coins[i].y) == -1)
+    {
+      coins[i].y = rand() % 10 + 17;
+      coins[i].x = rand() % 7 + 1;
+    }
   }
 }
