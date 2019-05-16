@@ -205,10 +205,66 @@ void GameBoard::scoreScreen(uint8_t s)
 	{
 	case 0:
 		displayZero(botBuff);
+		break;
+	case 1:
+		displayOne(botBuff);
+		break;
+	case 2:
+		displayTwo(botBuff);
+		break;
+	case 3:
+		displayThree(botBuff);
+		break;
+	case 4:
+		displayFour(botBuff);
+		break;
+	case 5:
+		displayFive(botBuff);
+		break;
+	case 6:
+		displaySix(botBuff);
+		break;
+	case 7:
+		displaySeven(botBuff);
+		break;
+	case 8:
+		displayEight(botBuff);
+		break;
+	case 9:
+		displayNine(botBuff);
+		break;
 	}
 	switch (d2)
 	{
 	case 0:
 		displayZero(topBuff);
+		break;
+	case 1:
+		displayOne(topBuff);
+		break;
+	case 2:
+		displayTwo(topBuff);
+		break;
+	case 3:
+		displayThree(topBuff);
+		break;
+	case 4:
+		displayFour(topBuff);
+		break;
+	case 5:
+		displayFive(topBuff);
+		break;
+	case 6:
+		displaySix(topBuff);
+		break;
+	case 7:
+		displaySeven(topBuff);
+		break;
+	case 8:
+		displayEight(topBuff);
+		break;
+	case 9:
+		displayNine(topBuff);
+		break;
 	}
 }
