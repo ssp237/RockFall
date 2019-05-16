@@ -1,12 +1,14 @@
 #include "gameObject.h"
 #include "math.h"
 
-float max(float a, float b) {
-	return a > b ? a : b;
+float max(float a, float b)
+{
+  return a > b ? a : b;
 }
 
-float min(float a, float b) {
-	return a < b ? a : b;
+float min(float a, float b)
+{
+  return a < b ? a : b;
 }
 
 /*
@@ -28,9 +30,9 @@ void Player::draw(GameBoard &b)
 void Player::update(float dt)
 {
   x += dx;
-	x = max(1, min(8, x));
+  x = max(1, min(8, x));
   y += dy;
-	y = max(1, min(16, y));
+  y = max(1, min(16, y));
 }
 
 ObstacleType Player::getType()
@@ -58,6 +60,18 @@ void Rock::draw(GameBoard &board)
 }
 
 /**
+ * Update this rock's position
+ */
+void Rock::update(float dt)
+{
+}
+
+ObstacleType Rock::getType()
+{
+  return ROCK;
+}
+
+/**
  * Create a coin with position init_x, init_y and velocity 0
  */
 Coin::Coin(float init_x, float init_y)
@@ -74,4 +88,16 @@ Coin::Coin(float init_x, float init_y)
 void Coin::draw(GameBoard &board)
 {
   board.draw(floor(x), floor(y), ORANGE);
+}
+
+/**
+ * Update this coin's position
+ */
+void Coin::update(float dt)
+{
+}
+
+ObstacleType Coin::getType()
+{
+  return COIN;
 }
