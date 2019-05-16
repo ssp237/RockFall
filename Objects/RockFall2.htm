@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\RockFall2.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\RockFall2.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed May 15 16:51:43 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed May 15 23:47:55 2019
 <BR><P>
 <H3>Maximum Stack Usage =        248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -175,8 +175,8 @@ Function Pointers
 Global Symbols
 </H3>
 <P><STRONG><a name="[a0]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<BR><BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
 <P><STRONG><a name="[a1]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
@@ -187,9 +187,9 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[157]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[15a]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[158]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[15b]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
 <P><STRONG><a name="[a4]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
@@ -197,7 +197,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
 </UL>
 
-<P><STRONG><a name="[159]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[15c]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
 <P><STRONG><a name="[aa]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
@@ -214,79 +214,79 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
 </UL>
 
-<P><STRONG><a name="[15a]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+<P><STRONG><a name="[15d]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
 
-<P><STRONG><a name="[15b]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+<P><STRONG><a name="[15e]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[15c]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+<P><STRONG><a name="[15f]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[15d]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+<P><STRONG><a name="[160]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[15e]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+<P><STRONG><a name="[161]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
-<P><STRONG><a name="[15f]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+<P><STRONG><a name="[162]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
 
-<P><STRONG><a name="[160]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+<P><STRONG><a name="[163]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
 
-<P><STRONG><a name="[161]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+<P><STRONG><a name="[164]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[162]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+<P><STRONG><a name="[165]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[163]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+<P><STRONG><a name="[166]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
-<P><STRONG><a name="[164]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+<P><STRONG><a name="[167]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
 
-<P><STRONG><a name="[165]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+<P><STRONG><a name="[168]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
 
-<P><STRONG><a name="[166]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+<P><STRONG><a name="[169]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
 
-<P><STRONG><a name="[167]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+<P><STRONG><a name="[16a]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[168]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+<P><STRONG><a name="[16b]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
 
-<P><STRONG><a name="[169]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+<P><STRONG><a name="[16c]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
 
-<P><STRONG><a name="[16a]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+<P><STRONG><a name="[16d]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
 
-<P><STRONG><a name="[16b]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+<P><STRONG><a name="[16e]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[16c]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+<P><STRONG><a name="[16f]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
 
-<P><STRONG><a name="[16d]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+<P><STRONG><a name="[170]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
 
 <P><STRONG><a name="[af]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+<BR><BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 </UL>
 
-<P><STRONG><a name="[16e]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+<P><STRONG><a name="[171]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
 
-<P><STRONG><a name="[16f]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+<P><STRONG><a name="[172]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
 
-<P><STRONG><a name="[170]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+<P><STRONG><a name="[173]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
 
-<P><STRONG><a name="[171]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+<P><STRONG><a name="[174]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
 
-<P><STRONG><a name="[172]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+<P><STRONG><a name="[175]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
 
-<P><STRONG><a name="[173]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+<P><STRONG><a name="[176]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
 
-<P><STRONG><a name="[174]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+<P><STRONG><a name="[177]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
 <P><STRONG><a name="[a2]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
-<P><STRONG><a name="[175]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[178]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
-<P><STRONG><a name="[176]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry7.o(.ARM.Collect$$rtentry$$00000007))
+<P><STRONG><a name="[179]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry7.o(.ARM.Collect$$rtentry$$00000007))
 
 <P><STRONG><a name="[a9]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
 <BR><BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[177]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[17a]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[ab]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
 <BR><BR>[Stack]<UL><LI>Max Depth = 164 + Unknown Stack Size
@@ -296,7 +296,7 @@ Global Symbols
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[178]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[17b]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
 <P><STRONG><a name="[c6]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -306,7 +306,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[179]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+<P><STRONG><a name="[17c]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
 
 <P><STRONG><a name="[b0]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
@@ -315,7 +315,7 @@ Global Symbols
 <P><STRONG><a name="[3f]"></a>Reset_Handler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, startup_mk64f12.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mk64f12.o(RESET)
 </UL>
-<P><STRONG><a name="[17a]"></a>_maybe_terminate_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, maybetermalloc1.o(.emb_text), UNUSED)
+<P><STRONG><a name="[17d]"></a>_maybe_terminate_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, maybetermalloc1.o(.emb_text), UNUSED)
 
 <P><STRONG><a name="[40]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_mk64f12.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
@@ -594,9 +594,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
 </UL>
 
 <P><STRONG><a name="[b5]"></a>free</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, h1_free.o(.text))
@@ -643,7 +643,7 @@ Global Symbols
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnableUartClock
 </UL>
 
-<P><STRONG><a name="[17b]"></a>__assert</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, assert.o(.text), UNUSED)
+<P><STRONG><a name="[17e]"></a>__assert</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, assert.o(.text), UNUSED)
 
 <P><STRONG><a name="[ff]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memcpy4
@@ -651,11 +651,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Init
 </UL>
 
-<P><STRONG><a name="[17c]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+<P><STRONG><a name="[17f]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
 
-<P><STRONG><a name="[17d]"></a>__rt_memcpy_w</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+<P><STRONG><a name="[180]"></a>__rt_memcpy_w</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
 
-<P><STRONG><a name="[17e]"></a>_memcpy_lastbytes_aligned</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memcpy_w.o(.text), UNUSED)
+<P><STRONG><a name="[181]"></a>_memcpy_lastbytes_aligned</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memcpy_w.o(.text), UNUSED)
 
 <P><STRONG><a name="[130]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __aeabi_memclr4
@@ -663,11 +663,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Initialize
 </UL>
 
-<P><STRONG><a name="[17f]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
+<P><STRONG><a name="[182]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
 
-<P><STRONG><a name="[180]"></a>__rt_memclr_w</STRONG> (Thumb, 78 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
+<P><STRONG><a name="[183]"></a>__rt_memclr_w</STRONG> (Thumb, 78 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
 
-<P><STRONG><a name="[181]"></a>_memset_w</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr_w.o(.text), UNUSED)
+<P><STRONG><a name="[184]"></a>_memset_w</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr_w.o(.text), UNUSED)
 
 <P><STRONG><a name="[b3]"></a>__rt_heap_descriptor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_heap_descriptor_intlibspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
@@ -675,13 +675,13 @@ Global Symbols
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 </UL>
 
-<P><STRONG><a name="[14e]"></a>__rt_new_handler_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_new_handler_addr_intlibspace.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
+<P><STRONG><a name="[152]"></a>__rt_new_handler_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_new_handler_addr_intlibspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
 </UL>
 
-<P><STRONG><a name="[182]"></a>__use_no_heap</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+<P><STRONG><a name="[185]"></a>__use_no_heap</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
 
-<P><STRONG><a name="[183]"></a>__heap$guard</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+<P><STRONG><a name="[186]"></a>__heap$guard</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
 
 <P><STRONG><a name="[e]"></a>_terminate_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
 
@@ -720,14 +720,14 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 48 + Unknown Stack Size
 <LI>Call Chain = abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
+<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
 <LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to arm_exceptions_c]::__default_terminate_handler()
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::terminate()
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 
 <P><STRONG><a name="[b7]"></a>__assert_puts</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, assert_puts.o(.text))
@@ -749,14 +749,14 @@ Global Symbols
 <P><STRONG><a name="[be]"></a>_ttywrch</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, sys_wrch.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _ttywrch
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__assert_puts
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__assert_puts
 </UL>
 
 <P><STRONG><a name="[b1]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
 </UL>
 
 <P><STRONG><a name="[b9]"></a>__Heap_ProvideMemory</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, h1_extend.o(.text))
@@ -778,8 +778,8 @@ Global Symbols
 <P><STRONG><a name="[bd]"></a>__rt_SIGABRT</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_abrt_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT_inner
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT_inner
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 </UL>
@@ -787,8 +787,8 @@ Global Symbols
 <P><STRONG><a name="[bb]"></a>__rt_SIGRTMEM</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_rtmem_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
+<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Broken
@@ -798,8 +798,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
 <LI>Call Chain = std::terminate() &rArr; __cxa_get_globals &rArr; __ARM_exceptions_buffer_init &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_new_handler()
 </UL>
@@ -808,19 +808,19 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = __cxa_get_globals &rArr; __ARM_exceptions_buffer_init &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_eh_globals_addr
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::terminate()
 </UL>
 
-<P><STRONG><a name="[184]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[187]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[185]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[188]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[186]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+<P><STRONG><a name="[189]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
 <P><STRONG><a name="[c4]"></a>__rt_eh_globals_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_eh_globals_addr_intlibspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
@@ -868,9 +868,15 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
 </UL>
 
-<P><STRONG><a name="[187]"></a>__ARM_exceptions_buffer_allocate</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, arm_exceptions_mem.o(.text), UNUSED)
+<P><STRONG><a name="[18a]"></a>__ARM_exceptions_buffer_allocate</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, arm_exceptions_mem.o(.text), UNUSED)
 
-<P><STRONG><a name="[188]"></a>__ARM_exceptions_buffer_free</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, arm_exceptions_mem.o(.text), UNUSED)
+<P><STRONG><a name="[18b]"></a>__ARM_exceptions_buffer_free</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, arm_exceptions_mem.o(.text), UNUSED)
+
+<P><STRONG><a name="[143]"></a>Accelerometer_GetState</STRONG> (Thumb, 216 bytes, Stack size 32 bytes, fxos8700.o(i.Accelerometer_GetState))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Accelerometer_GetState
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameController::update(float)
+</UL>
 
 <P><STRONG><a name="[c8]"></a>Accelerometer_Initialize</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, fxos8700.o(i.Accelerometer_Initialize))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Accelerometer_Initialize &rArr; Initialize &rArr; Register_Write
@@ -889,7 +895,7 @@ Global Symbols
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitOsc0
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
-<BR>[Called By]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
 </UL>
 
 <P><STRONG><a name="[cb]"></a>BOARD_InitOsc0</STRONG> (Thumb, 20 bytes, Stack size 24 bytes, board.o(i.BOARD_InitOsc0))
@@ -928,8 +934,8 @@ Global Symbols
 <P><STRONG><a name="[d1]"></a>CLOCK_HAL_GetFllRefClk</STRONG> (Thumb, 72 bytes, Stack size 32 bytes, fsl_mcg_hal.o(i.CLOCK_HAL_GetFllRefClk))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_TestFllExternalRefFreq
+<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_TestFllExternalRefFreq
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetFllClk
 </UL>
@@ -954,10 +960,10 @@ Global Symbols
 <P><STRONG><a name="[da]"></a>CLOCK_HAL_GetOutClk</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, fsl_mcg_hal.o(i.CLOCK_HAL_GetOutClk))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetPll0Clk
+<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetPll0Clk
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetInternalRefClk
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetFllClk
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetBusClockFreq
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetSystemClockFreq
@@ -1043,9 +1049,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d5]"></a>CLOCK_HAL_TestOscFreq</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, fsl_mcg_hal.o(i.CLOCK_HAL_TestOscFreq))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetPbeMode
+<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetPbeMode
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetFbeMode
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_GetMcgExternalClkFreq
 </UL>
 
 <P><STRONG><a name="[e2]"></a>CLOCK_HAL_UpdateFastClkInternalRefDiv</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, fsl_mcg_hal.o(i.CLOCK_HAL_UpdateFastClkInternalRefDiv))
@@ -1062,18 +1068,18 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_EnablePortClock &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
-<BR>[Called By]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
 </UL>
 
 <P><STRONG><a name="[e9]"></a>CLOCK_SYS_EnableUartClock</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, fsl_clock_mk64f12.o(i.CLOCK_SYS_EnableUartClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_EnableUartClock &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIM_HAL_EnableClock
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Init
 </UL>
@@ -1117,10 +1123,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_OscInit &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSC_HAL_SetCapacitor
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSC_HAL_SetCapacitor
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOsc0Mode
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetOscerConfigration
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitOsc0
 </UL>
@@ -1129,8 +1135,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_RtcOscInit &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_HAL_SetOscillatorCmd
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_HAL_SetOscillatorCmd
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitRtcOsc
 </UL>
@@ -1139,12 +1145,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = CLOCK_SYS_SetConfiguration &rArr; CLOCK_SYS_SetMcgMode &rArr; CLOCK_HAL_SetPbeMode &rArr; CLOCK_HAL_GetMcgMode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOutDiv
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_HAL_SetOutDiv
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetOscerConfigration
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetMcgMode
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetCoreClockFreq
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_SetSimConfigration
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_ClockInit
 </UL>
@@ -1292,13 +1298,13 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 148 + Unknown Stack Size
 <LI>Call Chain = DbgConsole_Init &rArr; CLOCK_SYS_GetUartFreq &rArr; CLOCK_SYS_GetBusClockFreq &rArr; CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_HAL_SetParityMode
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_HAL_SetParityMode
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_HAL_SetBaudRate
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_GetUartFreq
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnableUartClock
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
+<BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
 </UL>
 
 <P><STRONG><a name="[fc]"></a>EDMA_DRV_IRQHandler</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, fsl_edma_driver.o(i.EDMA_DRV_IRQHandler))
@@ -1306,14 +1312,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_ClearIntStatus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA9_IRQHandler
-<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA8_IRQHandler
-<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA7_IRQHandler
-<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA6_IRQHandler
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA5_IRQHandler
-<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA4_IRQHandler
-<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA3_IRQHandler
-<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_IRQHandler
 <LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_IRQHandler
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA15_IRQHandler
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA14_IRQHandler
@@ -1322,6 +1321,13 @@ Global Symbols
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA11_IRQHandler
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA10_IRQHandler
 <LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA0_IRQHandler
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA9_IRQHandler
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA8_IRQHandler
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA7_IRQHandler
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA6_IRQHandler
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA5_IRQHandler
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA4_IRQHandler
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA3_IRQHandler
 </UL>
 
 <P><STRONG><a name="[131]"></a>EDMA_DRV_InstallCallback</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fsl_edma_driver.o(i.EDMA_DRV_InstallCallback))
@@ -1384,10 +1390,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = EDMA_HAL_STCDSetBasicTransfer &rArr; EDMA_HAL_STCDSetAttribute &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetNbytes
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetNbytes
 <LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetMajorCount
 <LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_HAL_STCDSetAttribute
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EDMA_DRV_PrepareDescriptorTransfer
 </UL>
@@ -1469,8 +1475,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
 <LI>Call Chain = I2C_HAL_SendStop &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_GetStatusFlag
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_HAL_GetStatusFlag
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2Cx_IRQHandler
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_PowerControl
@@ -1545,23 +1551,33 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Init
 </UL>
 
-<P><STRONG><a name="[153]"></a>board_init()</STRONG> (Thumb, 256 bytes, Stack size 16 bytes, main.o(i._Z10board_initv))
+<P><STRONG><a name="[157]"></a>board_init()</STRONG> (Thumb, 256 bytes, Stack size 16 bytes, main.o(i._Z10board_initv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = board_init()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[156]"></a>board_display(GameBoard*)</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, main.o(i._Z13board_displayP9GameBoard))
+<P><STRONG><a name="[141]"></a>board_display(GameBoard*)</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, main.o(i._Z13board_displayP9GameBoard))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = board_display(GameBoard*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::resetBoard()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[154]"></a>delay()</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, main.o(i._Z5delayv))
+<P><STRONG><a name="[14b]"></a>max(float, float)</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, gameobject.o(i._Z3maxff))
+<BR><BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Player::update(float)
+</UL>
+
+<P><STRONG><a name="[14a]"></a>min(float, float)</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, gameobject.o(i._Z3minff))
+<BR><BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Player::update(float)
+</UL>
+
+<P><STRONG><a name="[158]"></a>delay()</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, main.o(i._Z5delayv))
 <BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[152]"></a>i2c_init()</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, main.o(i._Z8i2c_initv))
+<P><STRONG><a name="[156]"></a>i2c_init()</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, main.o(i._Z8i2c_initv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = i2c_init()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1577,166 +1593,174 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rockfall.o(.constdata__ZTV14GameController)
 </UL>
-<P><STRONG><a name="[3a]"></a>GameController::update(float)</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, rockfall.o(i._ZN14GameController6updateEf))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GameController::update(float)
+<P><STRONG><a name="[3a]"></a>GameController::update(float)</STRONG> (Thumb, 158 bytes, Stack size 16 bytes, rockfall.o(i._ZN14GameController6updateEf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = GameController::update(float) &rArr; Accelerometer_GetState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Accelerometer_GetState
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rockfall.o(.constdata__ZTV14GameController)
 </UL>
 <P><STRONG><a name="[3b]"></a>GameController::preUpdate()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rockfall.o(i._ZN14GameController9preUpdateEv))
 <BR>[Address Reference Count : 1]<UL><LI> rockfall.o(.constdata__ZTV14GameController)
 </UL>
-<P><STRONG><a name="[141]"></a>GameController::GameController(GameBoard&)</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, rockfall.o(i._ZN14GameControllerC1ER9GameBoard))
+<P><STRONG><a name="[144]"></a>GameController::GameController(GameBoard&)</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, rockfall.o(i._ZN14GameControllerC1ER9GameBoard))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = GameController::GameController(GameBoard&) &rArr; GameBoard::GameBoard() &rArr; operator new[] (unsigned) &rArr; operator new(unsigned) &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Player::Player(float, float)
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::GameBoard()
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
+<BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Player::Player(float, float)
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::GameBoard()
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::RockFall()
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::RockFall()
 </UL>
 
-<P><STRONG><a name="[189]"></a>GameController::GameController__sub_object(GameBoard&)</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, rockfall.o(i._ZN14GameControllerC1ER9GameBoard), UNUSED)
+<P><STRONG><a name="[18c]"></a>GameController::GameController__sub_object(GameBoard&)</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, rockfall.o(i._ZN14GameControllerC1ER9GameBoard), UNUSED)
 
 <P><STRONG><a name="[3d]"></a>Player::draw(GameBoard&)</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, gameobject.o(i._ZN6Player4drawER9GameBoard))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = Player::draw(GameBoard&) &rArr; GameBoard::draw(int, int, Color) &rArr; GameBoard::drawOrange(int, int) &rArr; GameBoard::drawGreen(int, int)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::floor(float)
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::draw(int, int, Color)
+<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::floor(float)
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::draw(int, int, Color)
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> gameobject.o(.constdata__ZTV6Player)
 </UL>
-<P><STRONG><a name="[3e]"></a>Player::update(float)</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gameobject.o(i._ZN6Player6updateEf))
+<P><STRONG><a name="[3e]"></a>Player::update(float)</STRONG> (Thumb, 112 bytes, Stack size 4 bytes, gameobject.o(i._ZN6Player6updateEf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Player::update(float)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;min(float, float)
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;max(float, float)
+</UL>
 <BR>[Address Reference Count : 1]<UL><LI> gameobject.o(.constdata__ZTV6Player)
 </UL>
-<P><STRONG><a name="[144]"></a>Player::Player(float, float)</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gameobject.o(i._ZN6PlayerC1Eff))
-<BR><BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameController::GameController(GameBoard&)
+<P><STRONG><a name="[147]"></a>Player::Player(float, float)</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gameobject.o(i._ZN6PlayerC1Eff))
+<BR><BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameController::GameController(GameBoard&)
 </UL>
 
-<P><STRONG><a name="[18a]"></a>Player::Player__sub_object(float, float)</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, gameobject.o(i._ZN6PlayerC1Eff), UNUSED)
+<P><STRONG><a name="[18d]"></a>Player::Player__sub_object(float, float)</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, gameobject.o(i._ZN6PlayerC1Eff), UNUSED)
 
-<P><STRONG><a name="[155]"></a>RockFall::run()</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, rockfall.o(i._ZN8RockFall3runEv))
+<P><STRONG><a name="[159]"></a>RockFall::run()</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, rockfall.o(i._ZN8RockFall3runEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RockFall::run()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[147]"></a>RockFall::RockFall()</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, rockfall.o(i._ZN8RockFallC1Ev))
+<P><STRONG><a name="[14c]"></a>RockFall::RockFall()</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, rockfall.o(i._ZN8RockFallC1Ev))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = RockFall::RockFall() &rArr; GameController::GameController(GameBoard&) &rArr; GameBoard::GameBoard() &rArr; operator new[] (unsigned) &rArr; operator new(unsigned) &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameController::GameController(GameBoard&)
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::GameBoard()
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
+<BR>[Calls]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameController::GameController(GameBoard&)
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::GameBoard()
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[18b]"></a>RockFall::RockFall__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, rockfall.o(i._ZN8RockFallC1Ev), UNUSED)
+<P><STRONG><a name="[18e]"></a>RockFall::RockFall__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, rockfall.o(i._ZN8RockFallC1Ev), UNUSED)
 
-<P><STRONG><a name="[148]"></a>GameBoard::drawOrange(int, int)</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, gameboard.o(i._ZN9GameBoard10drawOrangeEii))
+<P><STRONG><a name="[14d]"></a>GameBoard::drawOrange(int, int)</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, gameboard.o(i._ZN9GameBoard10drawOrangeEii))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = GameBoard::drawOrange(int, int) &rArr; GameBoard::drawGreen(int, int)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawGreen(int, int)
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawRed(int, int)
+<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawGreen(int, int)
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawRed(int, int)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::draw(int, int, Color)
-</UL>
-
-<P><STRONG><a name="[14c]"></a>GameBoard::resetBoard()</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, gameboard.o(i._ZN9GameBoard10resetBoardEv))
-<BR><BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::GameBoard()
+<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::draw(int, int, Color)
 </UL>
 
-<P><STRONG><a name="[146]"></a>GameBoard::draw(int, int, Color)</STRONG> (Thumb, 62 bytes, Stack size 20 bytes, gameboard.o(i._ZN9GameBoard4drawEii5Color))
+<P><STRONG><a name="[142]"></a>GameBoard::resetBoard()</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, gameboard.o(i._ZN9GameBoard10resetBoardEv))
+<BR><BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::GameBoard()
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_display(GameBoard*)
+</UL>
+
+<P><STRONG><a name="[149]"></a>GameBoard::draw(int, int, Color)</STRONG> (Thumb, 62 bytes, Stack size 20 bytes, gameboard.o(i._ZN9GameBoard4drawEii5Color))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = GameBoard::draw(int, int, Color) &rArr; GameBoard::drawOrange(int, int) &rArr; GameBoard::drawGreen(int, int)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawGreen(int, int)
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawRed(int, int)
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawOrange(int, int)
+<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawGreen(int, int)
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawRed(int, int)
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawOrange(int, int)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Player::draw(GameBoard&)
 </UL>
 
-<P><STRONG><a name="[149]"></a>GameBoard::drawRed(int, int)</STRONG> (Thumb, 58 bytes, Stack size 12 bytes, gameboard.o(i._ZN9GameBoard7drawRedEii))
+<P><STRONG><a name="[14e]"></a>GameBoard::drawRed(int, int)</STRONG> (Thumb, 58 bytes, Stack size 12 bytes, gameboard.o(i._ZN9GameBoard7drawRedEii))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GameBoard::drawRed(int, int)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::draw(int, int, Color)
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawOrange(int, int)
+<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::draw(int, int, Color)
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawOrange(int, int)
 </UL>
 
-<P><STRONG><a name="[14a]"></a>GameBoard::drawGreen(int, int)</STRONG> (Thumb, 66 bytes, Stack size 12 bytes, gameboard.o(i._ZN9GameBoard9drawGreenEii))
+<P><STRONG><a name="[14f]"></a>GameBoard::drawGreen(int, int)</STRONG> (Thumb, 66 bytes, Stack size 12 bytes, gameboard.o(i._ZN9GameBoard9drawGreenEii))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GameBoard::drawGreen(int, int)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::draw(int, int, Color)
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawOrange(int, int)
+<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::draw(int, int, Color)
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::drawOrange(int, int)
 </UL>
 
-<P><STRONG><a name="[142]"></a>GameBoard::GameBoard()</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gameboard.o(i._ZN9GameBoardC1Ev))
+<P><STRONG><a name="[145]"></a>GameBoard::GameBoard()</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gameboard.o(i._ZN9GameBoardC1Ev))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = GameBoard::GameBoard() &rArr; operator new[] (unsigned) &rArr; operator new(unsigned) &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::resetBoard()
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new[] (unsigned)
+<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::resetBoard()
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new[] (unsigned)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameController::GameController(GameBoard&)
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::RockFall()
+<BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameController::GameController(GameBoard&)
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::RockFall()
 </UL>
 
-<P><STRONG><a name="[18c]"></a>GameBoard::GameBoard__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, gameboard.o(i._ZN9GameBoardC1Ev), UNUSED)
+<P><STRONG><a name="[18f]"></a>GameBoard::GameBoard__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, gameboard.o(i._ZN9GameBoardC1Ev), UNUSED)
 
-<P><STRONG><a name="[145]"></a>std::floor(float)</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, gameobject.o(i._ZSt5floorf))
+<P><STRONG><a name="[148]"></a>std::floor(float)</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, gameobject.o(i._ZSt5floorf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = std::floor(float)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_floorf
+<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_floorf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Player::draw(GameBoard&)
 </UL>
 
-<P><STRONG><a name="[14b]"></a>operator new[] (unsigned)</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, array_new.o(i._Znaj))
+<P><STRONG><a name="[150]"></a>operator new[] (unsigned)</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, array_new.o(i._Znaj))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = operator new[] (unsigned) &rArr; operator new(unsigned) &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
+<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::GameBoard()
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameBoard::GameBoard()
 </UL>
 
-<P><STRONG><a name="[143]"></a>operator new(unsigned)</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, new.o(i._Znwj))
+<P><STRONG><a name="[146]"></a>operator new(unsigned)</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, new.o(i._Znwj))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = operator new(unsigned) &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_new_handler_addr
+<BR>[Calls]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_new_handler_addr
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameController::GameController(GameBoard&)
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::RockFall()
+<BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameController::GameController(GameBoard&)
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::RockFall()
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new[] (unsigned)
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new[] (unsigned)
 </UL>
 
-<P><STRONG><a name="[14d]"></a>__hardfp_floorf</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, floorf.o(i.__hardfp_floorf))
-<BR><BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::floor(float)
+<P><STRONG><a name="[151]"></a>__hardfp_floorf</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, floorf.o(i.__hardfp_floorf))
+<BR><BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::floor(float)
 </UL>
 
-<P><STRONG><a name="[14f]"></a>configure_uart_pins</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, pin_mux.o(i.configure_uart_pins))
+<P><STRONG><a name="[153]"></a>configure_uart_pins</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, pin_mux.o(i.configure_uart_pins))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
 <LI>Call Chain = configure_uart_pins &rArr; PORT_HAL_SetMuxMode &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
 <BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_HAL_SetMuxMode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
+<BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
 </UL>
 
-<P><STRONG><a name="[150]"></a>dbg_uart_init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, board.o(i.dbg_uart_init))
+<P><STRONG><a name="[154]"></a>dbg_uart_init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, board.o(i.dbg_uart_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 156 + Unknown Stack Size
 <LI>Call Chain = dbg_uart_init &rArr; DbgConsole_Init &rArr; CLOCK_SYS_GetUartFreq &rArr; CLOCK_SYS_GetBusClockFreq &rArr; CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure_uart_pins
+<BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure_uart_pins
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
 </UL>
 
-<P><STRONG><a name="[151]"></a>hardware_init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, hardware_init.o(i.hardware_init))
+<P><STRONG><a name="[155]"></a>hardware_init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, hardware_init.o(i.hardware_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 164 + Unknown Stack Size
 <LI>Call Chain = hardware_init &rArr; dbg_uart_init &rArr; DbgConsole_Init &rArr; CLOCK_SYS_GetUartFreq &rArr; CLOCK_SYS_GetBusClockFreq &rArr; CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
+<BR>[Calls]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_uart_init
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_ClockInit
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SYS_EnablePortClock
 </UL>
@@ -1750,15 +1774,15 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 164 + Unknown Stack Size
 <LI>Call Chain = main &rArr; hardware_init &rArr; dbg_uart_init &rArr; DbgConsole_Init &rArr; CLOCK_SYS_GetUartFreq &rArr; CLOCK_SYS_GetBusClockFreq &rArr; CLOCK_HAL_GetOutClk &rArr; CLOCK_HAL_GetFllClk &rArr; CLOCK_HAL_GetFllRefClk &rArr; CLOCK_HAL_TestFllExternalRefFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::RockFall()
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::run()
+<BR>[Calls]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hardware_init
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::RockFall()
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RockFall::run()
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Accelerometer_Initialize
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init()
-<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay()
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_display(GameBoard*)
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init()
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init()
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay()
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_display(GameBoard*)
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init()
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
@@ -1767,9 +1791,9 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_fp_1
 </UL>
 
-<P><STRONG><a name="[18d]"></a>__fplib_config_fpu_vfp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+<P><STRONG><a name="[190]"></a>__fplib_config_fpu_vfp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
 
-<P><STRONG><a name="[18e]"></a>__fplib_config_pureend_doubles</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+<P><STRONG><a name="[191]"></a>__fplib_config_pureend_doubles</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
 <P>
 <H3>
 Local Symbols
@@ -2334,7 +2358,7 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure_uart_pins
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure_uart_pins
 </UL>
 
 <P><STRONG><a name="[fd]"></a>DMAMUX_HAL_SetChannelCmd</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, fsl_edma_driver.o(i.DMAMUX_HAL_SetChannelCmd))
