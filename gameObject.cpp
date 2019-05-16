@@ -40,11 +40,12 @@ ObstacleType Player::getType()
   return PLAYER;
 }
 
-Rock::Rock() {
-	x = -1;
-	y = -1;
-	dx = 0;
-	dy = 0;
+Rock::Rock()
+{
+  x = -1;
+  y = -1;
+  dx = 0;
+  dy = 0;
 }
 
 /**
@@ -72,7 +73,7 @@ void Rock::draw(GameBoard &board)
 void Rock::update(float dt)
 {
   dy -= g;
-  y = max(1, y + dy);
+  y = max(-1, y + dy);
 }
 
 ObstacleType Rock::getType()
@@ -80,12 +81,13 @@ ObstacleType Rock::getType()
   return ROCK;
 }
 
-Coin::Coin() {
-	x = -1; 
-	y = -1;
-	dx = 0;
-	dy = 0;
-	fall_speed = 0.01;
+Coin::Coin()
+{
+  x = -1;
+  y = -1;
+  dx = 0;
+  dy = 0;
+  fall_speed = 0.01;
 }
 
 /**
@@ -97,7 +99,7 @@ Coin::Coin(float init_x, float init_y)
   y = init_y;
   dx = 0;
   dy = 0;
-	fall_speed = 0.01;
+  fall_speed = 0.01;
 }
 
 /**
@@ -113,7 +115,7 @@ void Coin::draw(GameBoard &board)
  */
 void Coin::update(float dt)
 {
-  y = max(1, y - fall_speed);
+  y = max(-1, y - fall_speed);
 }
 
 ObstacleType Coin::getType()
