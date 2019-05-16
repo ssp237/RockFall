@@ -64,6 +64,8 @@ void Rock::draw(GameBoard &board)
  */
 void Rock::update(float dt)
 {
+  dy -= g;
+  y = max(1, y + dy);
 }
 
 ObstacleType Rock::getType()
@@ -95,6 +97,7 @@ void Coin::draw(GameBoard &board)
  */
 void Coin::update(float dt)
 {
+  y = max(1, y - fall_speed);
 }
 
 ObstacleType Coin::getType()
