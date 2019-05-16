@@ -23,7 +23,7 @@ GameController::GameController(GameBoard &board_ref)
   player = new Player(4, 1);
   board = board_ref;
   rocks = new Rock[10];
-  rocks[1] = new Rock(8, 16);
+  rocks[0] = new Rock(8, 16);
   numRocks = 1;
   coins = new Coin[10];
   numCoins = 0;
@@ -64,6 +64,21 @@ void GameController::render()
 
 void GameController::preUpdate()
 {
+  rockCount--;
+  if (rockCount <= 0)
+  {
+    rockCount = rand() % maxRockCount + 1;
+    rocks[numRocks] = new Rock(rand() % 7 + 1, 16);
+    numRocks += 1;
+  }
+
+  coinCount--;
+  if (coinCount <= 0)
+  {
+    coinCount = rand() % maxCoinCount + 1;
+    coins[numCoins] = new Coin(rand() % 7 + 1, 16);
+    numCoins += 1;
+  }
 }
 
 /**
