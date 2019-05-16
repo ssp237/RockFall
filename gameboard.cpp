@@ -1,5 +1,6 @@
 #include "gameboard.h"
 #include "stdint.h"
+#include "math.h"
 
 //Constructor
 GameBoard::GameBoard()
@@ -86,10 +87,120 @@ void GameBoard::deathScreen()
 	botBuff[2] |= 32;
 }
 
+void displayZero(uint8_t *b)
+{
+	b[15] |= 56;
+	b[13] |= 68;
+	b[11] |= 76;
+	b[9] |= 84;
+	b[7] |= 100;
+	b[5] |= 68;
+	b[3] |= 56;
+}
+
+void displayOne(uint8_t *b)
+{
+	b[15] |= 16;
+	b[13] |= 48;
+	b[11] |= 80;
+	b[9] |= 16;
+	b[7] |= 16;
+	b[5] |= 16;
+	b[3] |= 124;
+}
+
+void displayTwo(uint8_t *b)
+{
+	b[15] |= 56;
+	b[13] |= 68;
+	b[11] |= 4;
+	b[9] |= 24;
+	b[7] |= 32;
+	b[5] |= 64;
+	b[3] |= 124;
+}
+
+void displayThree(uint8_t *b)
+{
+	b[15] |= 56;
+	b[13] |= 68;
+	b[11] |= 4;
+	b[9] |= 24;
+	b[7] |= 4;
+	b[5] |= 68;
+	b[3] |= 56;
+}
+
+void displayFour(uint8_t *b)
+{
+	b[15] |= 8;
+	b[13] |= 24;
+	b[11] |= 40;
+	b[9] |= 72;
+	b[7] |= 124;
+	b[5] |= 8;
+	b[3] |= 8;
+}
+
+void displayFive(uint8_t *b)
+{
+	b[15] |= 124;
+	b[13] |= 64;
+	b[11] |= 120;
+	b[9] |= 4;
+	b[7] |= 4;
+	b[5] |= 68;
+	b[3] |= 56;
+}
+
+void displaySix(uint8_t *b)
+{
+	b[15] |= 56;
+	b[13] |= 68;
+	b[11] |= 64;
+	b[9] |= 120;
+	b[7] |= 68;
+	b[5] |= 68;
+	b[3] |= 56;
+}
+
+void displaySeven(uint8_t *b)
+{
+	b[15] |= 124;
+	b[13] |= 4;
+	b[11] |= 8;
+	b[9] |= 16;
+	b[7] |= 16;
+	b[5] |= 16;
+	b[3] |= 16;
+}
+
+void displayEight(uint8_t *b)
+{
+	b[15] |= 56;
+	b[13] |= 68;
+	b[11] |= 68;
+	b[9] |= 56;
+	b[7] |= 68;
+	b[5] |= 68;
+	b[3] |= 56;
+}
+
+void displayNine(uint8_t *b)
+{
+	b[15] |= 56;
+	b[13] |= 68;
+	b[11] |= 68;
+	b[9] |= 60;
+	b[7] |= 4;
+	b[5] |= 68;
+	b[3] |= 56;
+}
+
 void GameBoard::scoreScreen(uint8_t s)
 {
 	uint8_t d1 = s % 10;
-	uint8_t d2 = floor(s / 10) % 10;
+	uint8_t d2 = (s / 10) % 10;
 	switch (d1)
 	{
 	case 0:
@@ -100,15 +211,4 @@ void GameBoard::scoreScreen(uint8_t s)
 	case 0:
 		displayZero(topBuff);
 	}
-}
-
-void displayZero(uint8_t *b)
-{
-	b[15] |= 56;
-	b[13] |= 68;
-	b[11] |= 76;
-	b[9] |= 84;
-	b[7] |= 100;
-	b[5] |= 68;
-	b[3] |= 56;
 }
