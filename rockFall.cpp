@@ -8,8 +8,8 @@ extern "C"
 #include "fsl_i2c_hal.h"
   int32_t Accelerometer_Initialize();
   int32_t Accelerometer_GetState(ACCELEROMETER_STATE *);
-  int fastTurn = 500;
-  int slowTurn = 200;
+  int fastTurn = 400;
+  int slowTurn = 150;
 }
 ACCELEROMETER_STATE state;
 
@@ -62,7 +62,7 @@ void GameController::update(float dt)
   Accelerometer_GetState(&state);
   if (state.x > fastTurn)
   { //Big right move
-    player->dx = 0.1;
+    player->dx = 0.05;
   }
   else if (state.x > slowTurn)
   { //Small right move
@@ -70,7 +70,7 @@ void GameController::update(float dt)
   }
   else if (state.x < (-1 * fastTurn))
   { //Big left move
-    player->dx = -0.1;
+    player->dx = -0.05;
   }
   else if (state.x < (-1 * slowTurn))
   { //Small left move
