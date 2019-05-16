@@ -46,6 +46,7 @@ RockFall::RockFall()
 void RockFall::run()
 {
 	if (isDed){
+		board->deathScreen();
 	}
 	else{
 		game->render();

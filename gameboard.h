@@ -26,7 +26,9 @@ public:
   void draw(int x, int y, Color c);
   void pushToBoard();
   void resetBoard();
-	GameBoard();
+  GameBoard();
+  void deathScreen();
+
 
 private:
   void drawGreen(int x, int y);
