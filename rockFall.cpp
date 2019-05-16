@@ -1,6 +1,7 @@
 #include "rockFall.h"
 #include "gameObject.h"
 #include "stdlib.h"
+#include "math.h"
 extern "C"
 {
 #include "board_accelerometer.h"
@@ -10,10 +11,11 @@ extern "C"
 #include "fsl_i2c_hal.h"
   int32_t Accelerometer_Initialize();
   int32_t Accelerometer_GetState(ACCELEROMETER_STATE *);
-  int fastTurn = 400;
-  int slowTurn = 150;
 }
 ACCELEROMETER_STATE state;
+const int fastTurn = 400;
+const int slowTurn = 150;
+bool isDed = false;
 
 /**
  * Create a GameController with player at (0,0) and space for 10 
@@ -43,7 +45,11 @@ RockFall::RockFall()
 
 void RockFall::run()
 {
-  game->render();
+	if (isDed){
+	}
+	else{
+		game->render();
+	}
 }
 
 void GameController::draw(GameBoard &board)
@@ -117,6 +123,9 @@ void GameController::update(float dt)
   for (int i = 0; i < numRocks; i++)
   {
     rocks[i].update(dt);
+		if ((floor(rocks[i].y)==0) && (floor(player->x) == floor(rocks[i].x))){
+			isDed = true;
+		}
   }
   for (int i = 0; i < numCoins; i++)
   {
