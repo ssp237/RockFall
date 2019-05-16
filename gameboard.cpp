@@ -80,5 +80,16 @@ void GameBoard::deathScreen(){
 	botBuff[2] |= 32;
 }
 
-void GameBoard::scoreScreen(){
+void GameBoard::scoreScreen(uint8_t s){
+	resetBoard();
+}
+
+void displayZero(uint8_t* b){
+	b[15] |= 56;
+	b[13] |= 68;
+	b[11] |= 76;
+	b[9] |= 84;
+	b[7] |= 100;
+	b[5] |= 68;
+	b[3] |= 56;
 }

@@ -50,10 +50,12 @@ void RockFall::run()
   if (isDed)
   {
 		scoreTime ++;
-		if (scoreTime > 100){
-			board->scoreScreen();
+		if (scoreTime > 2000){
+			board->scoreScreen(game->coinsCollected);
 		}
-    board->deathScreen();
+		else{
+			board->deathScreen();
+		}
   }
   else
   {
@@ -148,7 +150,7 @@ void GameController::update(float dt)
     coins[i].update(dt);
     if ((floor(coins[i].y) == 0) && (floor(player->x) == floor(coins[i].x)))
     {
-      coinCount++;
+      coinsCollected++;
       coins[i].y = rand() % 10 + 17;
       coins[i].x = rand() % 7 + 1;
     }

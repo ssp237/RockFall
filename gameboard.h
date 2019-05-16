@@ -28,7 +28,7 @@ public:
   void resetBoard();
   GameBoard();
   void deathScreen();
-  void scoreScreen();
+  void scoreScreen(uint8_t s);
 
 
 private:
