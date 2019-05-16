@@ -61,4 +61,15 @@ public:
 
 private:
 };
+/**Implementation of Obstacle : coin */
+class Coin : public Obstacle
+{
+public:
+  Coin(float init_x, float init_y);
+  ObstacleType getType();
+  void draw(GameBoard &b);
+  void update(float dt);
+
+private:
+};
 #endif
