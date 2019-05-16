@@ -134,6 +134,7 @@ void GameController::update(float dt)
     {
       rocks[i].y = rand() % 10 + 17;
       rocks[i].x = rand() % 7 + 1;
+      rocks[i].dy = 0;
     }
   }
   for (int i = 0; i < numCoins; i++)
