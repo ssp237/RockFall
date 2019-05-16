@@ -79,3 +79,6 @@ void GameBoard::deathScreen(){
 	botBuff[4] |= 32;
 	botBuff[2] |= 32;
 }
+
+void GameBoard::scoreScreen(){
+}

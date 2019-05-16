@@ -28,6 +28,7 @@ public:
   void resetBoard();
   GameBoard();
   void deathScreen();
+  void scoreScreen();
 
 
 private:

@@ -16,6 +16,7 @@ ACCELEROMETER_STATE state;
 const int fastTurn = 400;
 const int slowTurn = 150;
 bool isDed = false;
+int scoreTime = 0;
 
 /**
  * Create a GameController with player at (0,0) and space for 10 
@@ -47,6 +48,10 @@ void RockFall::run()
 {
   if (isDed)
   {
+		scoreTime ++;
+		if (scoreTime > 100){
+			board->scoreScreen();
+		}
     board->deathScreen();
   }
   else
