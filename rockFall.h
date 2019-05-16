@@ -37,6 +37,10 @@ private:
   GameBoard board;
   uint numCoins;
   uint numRocks;
+  uint rockCount;
+  uint coinCount;
+  uint maxRockCount = 100;
+  uint maxCoinCount = 50;
 };
 
 /* 

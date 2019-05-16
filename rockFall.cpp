@@ -1,4 +1,5 @@
 #include "rockFall.h"
+#include "stdlib.h"
 extern "C"
 {
 #include "board_accelerometer.h"
