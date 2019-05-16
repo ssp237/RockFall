@@ -22,6 +22,7 @@ GameController::GameController(GameBoard &board_ref)
   player = new Player(4, 1);
   board = board_ref;
   rocks = new Rock[10];
+  rocks[1] = new Rock(8, 16);
   numRocks = 0;
   coins = new Coin[10];
   numCoins = 0;
