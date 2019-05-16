@@ -27,7 +27,7 @@ Project File Date:  05/15/2019
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling gameObject.cpp...
+compiling rockFall.cpp...
 gameObject.h(46): warning:  #1300-D: getType inherits implicit virtual
     ObstacleType getType();
 gameObject.h(47): warning:  #1300-D: draw inherits implicit virtual
@@ -46,12 +46,22 @@ gameObject.h(70): warning:  #1300-D: draw inherits implicit virtual
     void draw(GameBoard &b);
 gameObject.h(71): warning:  #1300-D: update inherits implicit virtual
     void update(float dt);
-gameObject.cpp(39): warning:  #1-D: last line of file ends without a newline
+rockFall.h(28): warning:  #1300-D: render inherits implicit virtual
+    void render();
+rockFall.h(29): warning:  #1300-D: update inherits implicit virtual
+    void update(float dt);
+rockFall.h(30): warning:  #1300-D: preUpdate inherits implicit virtual
+    void preUpdate();
+rockFall.h(31): warning:  #1300-D: draw inherits implicit virtual
+    void draw(GameBoard &board);
+rockFall.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif
+rockFall.cpp(87): warning:  #1-D: last line of file ends without a newline
   }
-gameObject.cpp: 10 warnings, 0 errors
+rockFall.cpp: 15 warnings, 0 errors
 linking...
-Program Size: Code=15596 RO-data=2624 RW-data=52 ZI-data=2268  
-".\Objects\RockFall2.axf" - 0 Error(s), 10 Warning(s).
+Program Size: Code=15632 RO-data=2624 RW-data=52 ZI-data=2268  
+".\Objects\RockFall2.axf" - 0 Error(s), 15 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -233,7 +243,7 @@ Package Vendor: Keil
       Source file:   platform\devices\MK64F12\startup\system_MK64F12.c
       Include file:  addon_cmsis\Driver\MK64F\Config\RTE_Device.h
       Source file:   platform\devices\startup.c
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:15
 </pre>
 </body>
 </html>
