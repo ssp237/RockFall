@@ -19,8 +19,11 @@ void Player::draw(GameBoard &b)
 
 void Player::update(float dt)
 {
+  x += dx;
+  y += dy;
 }
 
-ObstacleType Player::getType() {
-	return PLAYER;
+ObstacleType Player::getType()
+{
+  return PLAYER;
 }
