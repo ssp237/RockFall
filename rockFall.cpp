@@ -1,5 +1,17 @@
 #include "rockFall.h"
-#include "stdlib.h"
+extern "C"
+{
+#include "board_accelerometer.h"
+#include "fsl_debug_console.h"
+#include "board.h"
+#include "Driver_I2C.h"
+#include "fsl_i2c_hal.h"
+  int32_t Accelerometer_Initialize();
+  int32_t Accelerometer_GetState(ACCELEROMETER_STATE *);
+  int fastTurn = 500;
+  int slowTurn = 200;
+}
+ACCELEROMETER_STATE state;
 
 /**
  * Create a GameController with player at (0,0) and space for 10 
@@ -20,7 +32,7 @@ RockFall::RockFall()
 
 void RockFall::run()
 {
-	game->render();
+  game->render();
 }
 
 void GameController::draw(GameBoard &board)
@@ -47,6 +59,24 @@ void GameController::preUpdate()
  */
 void GameController::update(float dt)
 {
+  Accelerometer_GetState(&state);
+  if (state.x > fastTurn)
+  { //Big right move
+    player->dx = 0.1;
+  }
+  else if (state.x > slowTurn)
+  { //Small right move
+  }
+  else if (state.x < (-1 * fastTurn))
+  { //Big left move
+  }
+  else if (state.x < (-1 * slowTurn))
+  { //Small left move
+  }
+  else
+  {
+    player->dx = 0;
+  }
   player->update(dt);
   for (int i = 0; i < objectSize; i++)
   {
